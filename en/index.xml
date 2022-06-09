@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Emmanuel Amadio tech blog</title>
+    <title>E A I O</title>
     <link>https://eamadio.github.io/en/</link>
-    <description>Recent content on Emmanuel Amadio tech blog</description>
+    <description>Recent content on E A I O</description>
     <image>
       <url>https://eamadio.github.io/papermod-cover.png</url>
       <link>https://eamadio.github.io/papermod-cover.png</link>
@@ -28,6 +28,15 @@
       <description>In part 1 we explored how I created a website using Hugo, now we are going to create a github action to automatically deploy the site on github pages when we create a commit.
 Set up of Git repositories I created 2 GitHub repositories for the project:
 First Repository for the hugo project eamadio.github.io.hugo Second repository to host my blog as Github User page eamadio.github.io You can find on a lot of articles who are using 2 differents branches of the same repository (&amp;ldquo;main&amp;rdquo; for the project, &amp;ldquo;gh_pages&amp;rdquo; for the generated static files), however I prefere to have two distinct repositories, each one dealing with a different concern.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://eamadio.github.io/en/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eamadio.github.io/en/about/</guid>
+      <description>💻 Digital Solutions Developer 📈 Agile Facilitator 🥇 Embedded Systems Expertise 🛠 [ C | Python | VHDL | Web Services | Electronics | Scrum ]</description>
     </item>
     
     

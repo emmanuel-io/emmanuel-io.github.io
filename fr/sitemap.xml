@@ -33,19 +33,29 @@
     <loc>https://eamadio.github.io/fr/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://eamadio.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://eamadio.github.io/fr/about/"
+                />
   </url><url>
-    <loc>https://eamadio.github.io/l2/archives/</loc>
+    <loc>https://eamadio.github.io/fr/archives/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://eamadio.github.io/archives/"
+                href="https://eamadio.github.io/en/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://eamadio.github.io/l2/archives/"
+                href="https://eamadio.github.io/fr/archives/"
                 />
   </url><url>
     <loc>https://eamadio.github.io/fr/tags/blog/</loc>
