@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on E A I O</title>
+    <title>Tags on E__A_IO</title>
     <link>https://eamadio.github.io/en/tags/</link>
-    <description>Recent content in Tags on E A I O</description>
+    <description>Recent content in Tags on E__A_IO</description>
     <image>
       <url>https://eamadio.github.io/papermod-cover.png</url>
       <link>https://eamadio.github.io/papermod-cover.png</link>
@@ -16,6 +16,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://eamadio.github.io/en/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fastapi</title>
+      <link>https://eamadio.github.io/en/tags/fastapi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eamadio.github.io/en/tags/fastapi/</guid>
       <description></description>
     </item>
     

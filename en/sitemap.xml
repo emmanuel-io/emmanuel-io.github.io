@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://eamadio.github.io/en/posts/fastapi-base-2/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://eamadio.github.io/en/posts/set-hugo-1/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -99,6 +103,10 @@
                 hreflang="en"
                 href="https://eamadio.github.io/en/"
                 />
+  </url><url>
+    <loc>https://eamadio.github.io/en/tags/fastapi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://eamadio.github.io/en/tags/hugo/</loc>
     <changefreq>monthly</changefreq>
