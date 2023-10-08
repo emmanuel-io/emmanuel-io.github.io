@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Emmmanuel IO</title>
+    <title>Posts on Emmanuel IO</title>
     <link>https://emmanuel-io.github.io/en/posts/</link>
-    <description>Recent content in Posts on Emmmanuel IO</description>
+    <description>Recent content in Posts on Emmanuel IO</description>
     <image>
-      <title>Emmmanuel IO</title>
+      <title>Emmanuel IO</title>
       <url>https://emmanuel-io.github.io/papermod-cover.png</url>
       <link>https://emmanuel-io.github.io/papermod-cover.png</link>
     </image>
