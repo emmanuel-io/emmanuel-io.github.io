@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>blog on E__A_IO</title>
-    <link>https://emmanuel-amadio.github.io/en/tags/blog/</link>
-    <description>Recent content in blog on E__A_IO</description>
+    <title>blog on Emmmanuel IO</title>
+    <link>https://emmanuel-io.github.io/en/tags/blog/</link>
+    <description>Recent content in blog on Emmmanuel IO</description>
     <image>
-      <title>E__A_IO</title>
-      <url>https://emmanuel-amadio.github.io/papermod-cover.png</url>
-      <link>https://emmanuel-amadio.github.io/papermod-cover.png</link>
+      <title>Emmmanuel IO</title>
+      <url>https://emmanuel-io.github.io/papermod-cover.png</url>
+      <link>https://emmanuel-io.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://emmanuel-amadio.github.io/en/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://emmanuel-io.github.io/en/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to set up a fastapi backend service project</title>
-      <link>https://emmanuel-amadio.github.io/en/posts/fastapi-base-2/</link>
+      <link>https://emmanuel-io.github.io/en/posts/fastapi-base-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://emmanuel-amadio.github.io/en/posts/fastapi-base-2/</guid>
+      <guid>https://emmanuel-io.github.io/en/posts/fastapi-base-2/</guid>
       <description>As a convinced user of FastAPI I will explore in a new serie of articles how to setup a backend service with 2 databases using async interfaces:
 SQL: PostgreSQL + SQLAlchemy (async). NoSQL: MongoDB + Beanie (async) N.B. I know there are existing solutions which are readily available from the FastAPI website, the point here is to propose something new with a twist, call it geek.
 Setting up the root folder We will use docker-compose to run the databases in containers.</description>
@@ -24,22 +24,22 @@ Setting up the root folder We will use docker-compose to run the databases in co
     
     <item>
       <title>How to set up this website using Hugo part 1</title>
-      <link>https://emmanuel-amadio.github.io/en/posts/set-hugo-1/</link>
+      <link>https://emmanuel-io.github.io/en/posts/set-hugo-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://emmanuel-amadio.github.io/en/posts/set-hugo-1/</guid>
+      <guid>https://emmanuel-io.github.io/en/posts/set-hugo-1/</guid>
       <description>My career is shifting, and I&amp;rsquo;m steering it towards web development, mostly backend. Coming from digital electronics &amp;amp; embedded systems, I have a broad view on the digital ecosystem and I need a space where to show case my work and ideas. Having a github account is nice, but I wanted a place where I could publish articles online. It can be of any form like tutorial, blogs, reviews, editorials and much more.</description>
     </item>
     
     <item>
       <title>How to set up this website using Hugo part 2</title>
-      <link>https://emmanuel-amadio.github.io/en/posts/set-hugo-2/</link>
+      <link>https://emmanuel-io.github.io/en/posts/set-hugo-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://emmanuel-amadio.github.io/en/posts/set-hugo-2/</guid>
+      <guid>https://emmanuel-io.github.io/en/posts/set-hugo-2/</guid>
       <description>In part 1 we explored how I created a website using Hugo, now we are going to create a github action to automatically deploy the site on github pages when we create a commit.
 Set up of Git repositories I created 2 GitHub repositories for the project:
-First Repository for the hugo project eamadio.github.io.hugo Second repository to host my blog as Github User page eamadio.github.io You can find on a lot of articles who are using 2 differents branches of the same repository (&amp;ldquo;main&amp;rdquo; for the project, &amp;ldquo;gh_pages&amp;rdquo; for the generated static files), however I prefere to have two distinct repositories, each one dealing with a different concern.</description>
+First Repository for the hugo project emmanuel-io.github.io.hugo Second repository to host my blog as Github User page emmanuel-io.github.io You can find on a lot of articles who are using 2 differents branches of the same repository (&amp;ldquo;main&amp;rdquo; for the project, &amp;ldquo;gh_pages&amp;rdquo; for the generated static files), however I prefere to have two distinct repositories, each one dealing with a different concern.</description>
     </item>
     
   </channel>

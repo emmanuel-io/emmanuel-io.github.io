@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>hugo on E__A_IO</title>
-    <link>https://emmanuel-amadio.github.io/fr/tags/hugo/</link>
-    <description>Recent content in hugo on E__A_IO</description>
+    <title>hugo on Emmmanuel IO</title>
+    <link>https://emmanuel-io.github.io/fr/tags/hugo/</link>
+    <description>Recent content in hugo on Emmmanuel IO</description>
     <image>
-      <title>E__A_IO</title>
-      <url>https://emmanuel-amadio.github.io/papermod-cover.png</url>
-      <link>https://emmanuel-amadio.github.io/papermod-cover.png</link>
+      <title>Emmmanuel IO</title>
+      <url>https://emmanuel-io.github.io/papermod-cover.png</url>
+      <link>https://emmanuel-io.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language><atom:link href="https://emmanuel-amadio.github.io/fr/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language><atom:link href="https://emmanuel-io.github.io/fr/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comment j&#39;ai construit ce site avec Hugo partie 1</title>
-      <link>https://emmanuel-amadio.github.io/fr/posts/set-hugo-1/</link>
+      <link>https://emmanuel-io.github.io/fr/posts/set-hugo-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://emmanuel-amadio.github.io/fr/posts/set-hugo-1/</guid>
+      <guid>https://emmanuel-io.github.io/fr/posts/set-hugo-1/</guid>
       <description>Ma carrière évolue, et je l&amp;rsquo;oriente vers le développement web, principalement backend. Issu de l&amp;rsquo;électronique numérique et des systèmes embarqués, j&amp;rsquo;ai une vision large de l&amp;rsquo;écosystème numérique et j&amp;rsquo;ai besoin d&amp;rsquo;un espace où présenter mon travail et mes idées. Avoir un compte github c&amp;rsquo;est bien, mais je voulais un endroit où je pourrais publier des articles en ligne. Il peut prendre n&amp;rsquo;importe quelle forme, comme des tutoriels, des blogs, des critiques, des éditoriaux et bien plus encore.</description>
     </item>
     
     <item>
       <title>Comment j&#39;ai construit ce site avec Hugo partie 2</title>
-      <link>https://emmanuel-amadio.github.io/fr/posts/set-hugo-2/</link>
+      <link>https://emmanuel-io.github.io/fr/posts/set-hugo-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://emmanuel-amadio.github.io/fr/posts/set-hugo-2/</guid>
+      <guid>https://emmanuel-io.github.io/fr/posts/set-hugo-2/</guid>
       <description>Dans la partie 1, nous avons exploré comment j&amp;rsquo;ai créé un site Web en utilisant Hugo, maintenant nous allons créer une action github pour déployer automatiquement le site sur les pages github lorsque nous créons un commit.
 Set up of Git repositories I created 2 GitHub repositories for the project:
-First Repository for the hugo project eamadio.github.io.hugo Second repository to host my blog as Github User page eamadio.github.io You can find on a lot of articles who are using 2 differents branches of the same repository (&amp;ldquo;main&amp;rdquo; for the project, &amp;ldquo;gh_pages&amp;rdquo; for the generated static files), however I prefere to have two distinct repositories, each one dealing with a different concern.</description>
+First Repository for the hugo project emmanuel-io.github.io.hugo Second repository to host my blog as Github User page emmanuel-io.github.io You can find on a lot of articles who are using 2 differents branches of the same repository (&amp;ldquo;main&amp;rdquo; for the project, &amp;ldquo;gh_pages&amp;rdquo; for the generated static files), however I prefere to have two distinct repositories, each one dealing with a different concern.</description>
     </item>
     
   </channel>

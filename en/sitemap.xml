@@ -2,194 +2,194 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://emmanuel-amadio.github.io/en/posts/fastapi-base-2/</loc>
+    <loc>https://emmanuel-io.github.io/en/posts/fastapi-base-2/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/posts/set-hugo-1/</loc>
+    <loc>https://emmanuel-io.github.io/en/posts/set-hugo-1/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/posts/set-hugo-1/"
+                href="https://emmanuel-io.github.io/fr/posts/set-hugo-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/posts/set-hugo-1/"
+                href="https://emmanuel-io.github.io/en/posts/set-hugo-1/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/posts/set-hugo-2/</loc>
+    <loc>https://emmanuel-io.github.io/en/posts/set-hugo-2/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/posts/set-hugo-2/"
+                href="https://emmanuel-io.github.io/fr/posts/set-hugo-2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/posts/set-hugo-2/"
+                href="https://emmanuel-io.github.io/en/posts/set-hugo-2/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/about/</loc>
+    <loc>https://emmanuel-io.github.io/en/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/about/"
+                href="https://emmanuel-io.github.io/fr/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/about/"
+                href="https://emmanuel-io.github.io/en/about/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/archives/</loc>
+    <loc>https://emmanuel-io.github.io/en/archives/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/archives/"
+                href="https://emmanuel-io.github.io/fr/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/archives/"
+                href="https://emmanuel-io.github.io/en/archives/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/tags/blog/</loc>
+    <loc>https://emmanuel-io.github.io/en/tags/blog/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/tags/blog/"
+                href="https://emmanuel-io.github.io/fr/tags/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/tags/blog/"
+                href="https://emmanuel-io.github.io/en/tags/blog/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/categories/</loc>
+    <loc>https://emmanuel-io.github.io/en/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/categories/"
+                href="https://emmanuel-io.github.io/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/categories/"
+                href="https://emmanuel-io.github.io/en/categories/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/</loc>
+    <loc>https://emmanuel-io.github.io/en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/"
+                href="https://emmanuel-io.github.io/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/"
+                href="https://emmanuel-io.github.io/en/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/tags/fastapi/</loc>
+    <loc>https://emmanuel-io.github.io/en/tags/fastapi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/tags/hugo/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/tags/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/tags/hugo/"
-                />
-  </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/posts/</loc>
+    <loc>https://emmanuel-io.github.io/en/tags/hugo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/posts/"
+                href="https://emmanuel-io.github.io/fr/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/posts/"
+                href="https://emmanuel-io.github.io/en/tags/hugo/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/search/</loc>
+    <loc>https://emmanuel-io.github.io/en/posts/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/search/"
+                href="https://emmanuel-io.github.io/fr/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/search/"
+                href="https://emmanuel-io.github.io/en/posts/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/tags/</loc>
+    <loc>https://emmanuel-io.github.io/en/search/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/tags/"
+                href="https://emmanuel-io.github.io/fr/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/tags/"
+                href="https://emmanuel-io.github.io/en/search/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/tags/tutorial/</loc>
+    <loc>https://emmanuel-io.github.io/en/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/tags/tutorial/"
+                href="https://emmanuel-io.github.io/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/tags/tutorial/"
+                href="https://emmanuel-io.github.io/en/tags/"
                 />
   </url><url>
-    <loc>https://emmanuel-amadio.github.io/en/categories/tutorial/</loc>
+    <loc>https://emmanuel-io.github.io/en/tags/tutorial/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://emmanuel-amadio.github.io/fr/categories/tutorial/"
+                href="https://emmanuel-io.github.io/fr/tags/tutorial/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://emmanuel-amadio.github.io/en/categories/tutorial/"
+                href="https://emmanuel-io.github.io/en/tags/tutorial/"
+                />
+  </url><url>
+    <loc>https://emmanuel-io.github.io/en/categories/tutorial/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://emmanuel-io.github.io/fr/categories/tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://emmanuel-io.github.io/en/categories/tutorial/"
                 />
   </url>
 </urlset>
