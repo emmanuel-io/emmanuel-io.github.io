@@ -1,51 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on Emmanuel IO</title>
+    <title>Tags on Emmanuel IO tech blog</title>
     <link>https://emmanuel-io.github.io/en/tags/</link>
-    <description>Recent content in Tags on Emmanuel IO</description>
-    <image>
-      <title>Emmanuel IO</title>
-      <url>https://emmanuel-io.github.io/papermod-cover.png</url>
-      <link>https://emmanuel-io.github.io/papermod-cover.png</link>
-    </image>
+    <description>Recent content in Tags on Emmanuel IO tech blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://emmanuel-io.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://emmanuel-io.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>blog</title>
+      <title>Blog</title>
       <link>https://emmanuel-io.github.io/en/tags/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://emmanuel-io.github.io/en/tags/blog/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>fastapi</title>
+      <title>Fastapi</title>
       <link>https://emmanuel-io.github.io/en/tags/fastapi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://emmanuel-io.github.io/en/tags/fastapi/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hugo</title>
+      <title>Hugo</title>
       <link>https://emmanuel-io.github.io/en/tags/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://emmanuel-io.github.io/en/tags/hugo/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tutorial</title>
+      <title>Tutorial</title>
       <link>https://emmanuel-io.github.io/en/tags/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://emmanuel-io.github.io/en/tags/tutorial/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
