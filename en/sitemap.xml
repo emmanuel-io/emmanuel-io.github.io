@@ -2,10 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://emmanuel-io.github.io/en/posts/fastapi-base-2/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://emmanuel-io.github.io/en/posts/set-hugo-1/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -37,10 +33,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://emmanuel-io.github.io/en/categories/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://emmanuel-io.github.io/en/tags/fastapi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

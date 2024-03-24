@@ -9,15 +9,6 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://emmanuel-io.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to set up a fastapi backend service project</title>
-      <link>https://emmanuel-io.github.io/en/posts/fastapi-base-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emmanuel-io.github.io/en/posts/fastapi-base-2/</guid>
-      <description>As a convinced user of FastAPI I will explore in a new serie of articles how to setup a backend service with 2 databases using async interfaces:
-SQL: PostgreSQL + SQLAlchemy (async). NoSQL: MongoDB + Beanie (async) N.B. I know there are existing solutions which are readily available from the FastAPI website, the point here is to propose something new with a twist, call it geek.
-Setting up the root folder We will use docker-compose to run the databases in containers.</description>
-    </item>
-    <item>
       <title>How to set up this website using Hugo part 1</title>
       <link>https://emmanuel-io.github.io/en/posts/set-hugo-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
