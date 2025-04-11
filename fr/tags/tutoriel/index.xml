@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tutoriel on emmanuel io</title>
+    <link>https://emmanuel-io.github.io/fr/tags/tutoriel/</link>
+    <description>Recent content in Tutoriel on emmanuel io</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Sat, 04 Jun 2022 01:12:42 +0200</lastBuildDate>
+    <atom:link href="https://emmanuel-io.github.io/fr/tags/tutoriel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configurer Hugo localement avec Git et un thème</title>
+      <link>https://emmanuel-io.github.io/fr/posts/set-hugo-1/</link>
+      <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
+      <guid>https://emmanuel-io.github.io/fr/posts/set-hugo-1/</guid>
+      <description>Apprenez à configurer un blog Hugo depuis zéro en utilisant Git, les sous-modules et un thème de démarrage.</description>
+      <content:encoded><![CDATA[<p>J&rsquo;avais besoin d&rsquo;un espace pour présenter mon travail, partager des idées et écrire des articles — qu&rsquo;il s&rsquo;agisse de tutoriels, de critiques, d&rsquo;éditoriaux ou de simples billets de blog. GitHub est idéal pour héberger du code, mais je voulais un espace à moi sur le web. Ce blog me sert aussi de portfolio numérique.</p>
+<h2 id="quelles-options-pour-bloguer-">Quelles options pour bloguer ?</h2>
+<p>Voici quelques plateformes populaires pour démarrer un blog :</p>
+<ul>
+<li><a href="https://wordpress.com/">WordPress</a></li>
+<li><a href="https://medium.com/">Medium</a></li>
+<li><a href="https://ghost.org/">Ghost</a></li>
+<li><a href="https://www.wix.com/blog">Wix</a></li>
+</ul>
+<p>Ces plateformes tout-en-un offrent des fonctionnalités intéressantes :</p>
+<ul>
+<li>Mise en page automatisée pour se concentrer sur le contenu</li>
+<li>SEO intégré</li>
+<li>Éditeur dans le navigateur</li>
+<li>Gestion des médias, plugins et thèmes</li>
+<li>Hébergement, base de données et mises à jour gérés automatiquement</li>
+</ul>
+<p>Mais je voulais quelque chose de gratuit, minimaliste, et entièrement sous mon contrôle.</p>
+<p>GitHub Pages propose <a href="https://pages.github.com/">un hébergement gratuit pour du contenu statique</a> — sans backend, sans base de données — juste du HTML, CSS, JS. Cette contrainte m&rsquo;a amené à explorer les <strong>générateurs de sites statiques</strong>.</p>
+<blockquote>
+<p>🚧 <em>Mes raisons de choisir Hugo, et une réflexion plus approfondie, seront abordées dans un article à part.</em></p></blockquote>
+<hr>
+<h2 id="mise-en-place-du-blog">Mise en place du blog</h2>
+<p>J’ai suivi ces 5 étapes (inspirées de <a href="https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/">l’article de Bhanu Chaddha</a>) :</p>
+<ol>
+<li>Installer Hugo</li>
+<li>Créer le projet</li>
+<li>Initialiser Git</li>
+<li>Installer un thème via un sous-module</li>
+<li>Ajouter du contenu et lancer le site</li>
+</ol>
+<hr>
+<h3 id="1-installer-hugo">1. Installer Hugo</h3>
+<p>Sous Ubuntu :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo snap install hugo --channel<span class="o">=</span>extended
+</span></span></code></pre></div><p>Vérifier l&rsquo;installation :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo version
+</span></span></code></pre></div><p>Exemple de sortie :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">hugo v0.96.0+extended linux/amd64 BuildDate=2022-03-26T09:15:58Z
+</span></span></code></pre></div><hr>
+<h3 id="2-créer-un-nouveau-projet-hugo">2. Créer un nouveau projet Hugo</h3>
+<p>Se rendre dans le dossier de travail :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/Documents
+</span></span><span class="line"><span class="cl">hugo new site emmanuel-io-github-io-hugo
+</span></span></code></pre></div><p>Cela crée la structure du projet Hugo.</p>
+<hr>
+<h3 id="3-initialiser-git">3. Initialiser Git</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> emmanuel-io-github-io-hugo
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git branch -m main
+</span></span></code></pre></div><hr>
+<h3 id="4-installer-un-thème-avec-un-sous-module">4. Installer un thème avec un sous-module</h3>
+<p>J’ai choisi le thème <a href="https://themes.gohugo.io/themes/gohugo-theme-ananke/">Ananke</a> et je l’ai ajouté comme sous-module Git :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+</span></span></code></pre></div><hr>
+<h3 id="5-ajouter-la-configuration-dexemple-et-du-contenu">5. Ajouter la configuration d&rsquo;exemple et du contenu</h3>
+<p>Pour tester rapidement le site :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp -R ./themes/ananke/exampleSite/<span class="o">{</span>config.toml,content*,static*<span class="o">}</span> ./
+</span></span></code></pre></div><p>Puis lancer le serveur local :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo server
+</span></span></code></pre></div><p>Accédez à <a href="http://localhost:1313">http://localhost:1313</a> pour voir la version de démonstration du thème.</p>
+<hr>
+<h3 id="6-personnaliser-le-site">6. Personnaliser le site</h3>
+<p>À partir de là, j’ai commencé à adapter la configuration à mes besoins.</p>
+<p>👉 <em>Dans le prochain article, j’expliquerai comment j’ai structuré le site, ajouté le support multilingue, configuré GitHub Actions et personnalisé le thème.</em></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Déployer un site Hugo sur GitHub Pages avec CI/CD</title>
+      <link>https://emmanuel-io.github.io/fr/posts/set-hugo-2/</link>
+      <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
+      <guid>https://emmanuel-io.github.io/fr/posts/set-hugo-2/</guid>
+      <description>Configurez GitHub Actions pour automatiser la génération de votre blog Hugo et son déploiement avec une clé SSH et une double stratégie de dépôts.</description>
+      <content:encoded><![CDATA[<p>Dans la partie 1, nous avons exploré comment j&rsquo;ai créé un site Web en utilisant Hugo, maintenant nous allons créer une action github pour déployer automatiquement le site sur les pages github lorsque nous créons un commit.</p>
+<h3 id="set-up-of-git-repositories"><strong>Set up of Git repositories</strong></h3>
+<p>I created 2 GitHub repositories for the project:</p>
+<ol>
+<li>First Repository for the hugo project <code>emmanuel-io.github.io.hugo</code></li>
+<li>Second repository to host my blog as Github User page <code>emmanuel-io.github.io</code></li>
+</ol>
+<p>You can find on a lot of articles who are using 2 differents branches of the same repository (&ldquo;main&rdquo; for the project, &ldquo;gh_pages&rdquo; for the generated static files), however I prefere to have two distinct repositories, each one dealing with a different concern.</p>
+<p>Now go to the root of the project and execute below commands.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># create the .gitignore file</span>
+</span></span><span class="line"><span class="cl">touch .gitignore
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># add the public folder to the list of ignored files</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;public/&#34;</span> &gt;&gt;.gitignore 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># commit any uncommitted changes</span>
+</span></span><span class="line"><span class="cl">git commit -a -m <span class="s2">&#34;init&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># set remote origin branch</span>
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/emmanuel-io/emmanuel-io.github.io.hugo.git
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># push changes</span>
+</span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></div><p>I have ignored the <code>public</code> directory as we don&rsquo;t need to handle it in the repository.</p>
+<p>Now we need to generate a pair of public/private keys to be able to use github actions from the 1st directory to write in the 2nd repository.
+To understand what I did, you can check these links from the <a href="https://github.com/marketplace/actions/github-pages-action">GitHub Action</a> used to deploy my hugo website.</p>
+<p>Have a particular look at this part:
+<a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-create-ssh-deploy-key">Create SSH Deploy Key</a></p>
+<p>Do as stated but <strong>NOT IN YOUR PROJECT DIRECTORY !!!</strong></p>
+<p>Now in the root directory I created a github workflow yaml file to make sure that every time I push to remote, my blog is updated by github. In VSCode I created this file in &ldquo;.github/workflows/deploy.yml&rdquo;</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl"># A workflow run is made up of one or more jobs that can run sequentially or in parallel
+</span></span><span class="line"><span class="cl">jobs:
+</span></span><span class="line"><span class="cl">  # This workflow contains a single job called &#34;deploy&#34;
+</span></span><span class="line"><span class="cl">  deploy:
+</span></span><span class="line"><span class="cl">    # The type of runner that the job will run on
+</span></span><span class="line"><span class="cl">    runs-on: ubuntu-latest
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    # Steps represent a sequence of tasks that will be executed as part of the job
+</span></span><span class="line"><span class="cl">    steps:
+</span></span><span class="line"><span class="cl">      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+</span></span><span class="line"><span class="cl">      - uses: actions/checkout@v2
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">          submodules: true
+</span></span><span class="line"><span class="cl">          fetch-depth: 0
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      # Github Actions fo Hugo
+</span></span><span class="line"><span class="cl">      - name: Setup Hugo
+</span></span><span class="line"><span class="cl">        uses: peaceiris/actions-hugo@v2
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">          hugo-version: &#34;latest&#34;
+</span></span><span class="line"><span class="cl">          extended: true
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      # Creates ./public directory
+</span></span><span class="line"><span class="cl">      - name: Build
+</span></span><span class="line"><span class="cl">        run: hugo --minify
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      # Upload/Commit the contents from publish_dir -&gt; external_repository
+</span></span><span class="line"><span class="cl">      - name: Deploy
+</span></span><span class="line"><span class="cl">        uses: peaceiris/actions-gh-pages@v3
+</span></span><span class="line"><span class="cl">        if: ${{ github.ref == &#39;refs/heads/main&#39; }}
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+</span></span><span class="line"><span class="cl">          # github_token: ${{ secrets.GITHUB_TOKEN }}
+</span></span><span class="line"><span class="cl">          personal_token: ${{secrets.GH_TOKEN}}
+</span></span><span class="line"><span class="cl">          publish_dir: ./public
+</span></span><span class="line"><span class="cl">          external_repository: emmanuel-io/emmanuel-io.github.io
+</span></span><span class="line"><span class="cl">          publish_branch: main
+</span></span><span class="line"><span class="cl">          user_name: emadio
+</span></span><span class="line"><span class="cl">          user_email: emmanuel.amadio@mail.com
+</span></span></code></pre></div><h3 id="push-your-content"><strong>Push your content</strong></h3>
+<p>Now we have set up our repositories and created our static content in <code>public</code> directory . The only step remain is pushing our local content to GitHub. Lets do that now. Run below commands in the terminal</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># commit any uncommitted changes</span>
+</span></span><span class="line"><span class="cl">git commit -a -m <span class="s2">&#34;deploy with actions&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># push changes</span>
+</span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></div><p>And thats it.</p>
+<p>Now my blog is updated on every push :-)</p>
+<p>You can match your content and configuration with below repositories. The only difference is the value of <code>baseurl</code> that is because I have set up this demo website as Project Site and not the User Site.</p>
+<ol>
+<li><a href="https://github.com/emmanuel-io/emmanuel-io.github.io.hugo">&ldquo;hugo&rdquo; Project Repository</a></li>
+<li><a href="https://emmanuel-io.github.io/">Blog Repository</a></li>
+</ol>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

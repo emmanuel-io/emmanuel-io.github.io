@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Reflections on emmanuel io</title>
+    <link>https://emmanuel-io.github.io/fr/categories/reflections/</link>
+    <description>Recent content in Reflections on emmanuel io</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Fri, 11 Apr 2025 08:00:00 +0400</lastBuildDate>
+    <atom:link href="https://emmanuel-io.github.io/fr/categories/reflections/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pourquoi j’ai choisi Hugo : performance, simplicité et valeur durable</title>
+      <link>https://emmanuel-io.github.io/fr/posts/why-choose-hugo/</link>
+      <pubDate>Fri, 11 Apr 2025 08:00:00 +0400</pubDate>
+      <guid>https://emmanuel-io.github.io/fr/posts/why-choose-hugo/</guid>
+      <description>Découvrez pourquoi Hugo est le générateur de site statique idéal pour les développeurs qui recherchent vitesse, contrôle et faible maintenance. Une réflexion personnelle d’un ingénieur logiciel.</description>
+      <content:encoded><![CDATA[<p>En tant que développeur backend soucieux d’optimisation et de valeur à long terme, je cherche des outils rapides, sobres et fiables. Pour créer mon blog et portfolio, je voulais une solution qui colle à ma manière de penser et de travailler : conviviale pour les développeurs, simple à maintenir, et pérenne.</p>
+<p>Après avoir comparé les options, j’ai choisi <a href="https://gohugo.io/">Hugo</a> — un générateur de site statique open-source — et je ne le regrette pas.</p>
+<h2 id="pourquoi-pas-un-cms-classique-">Pourquoi pas un CMS classique ?</h2>
+<p>Des plateformes comme WordPress, Ghost, Medium ou Wix offrent une interface pratique et des thèmes tout prêts. Mais elles ont un coût :</p>
+<ul>
+<li>Hébergement payant et dépendance à des plugins</li>
+<li>Mises à jour de sécurité régulières</li>
+<li>Temps de chargement souvent lents sans cache</li>
+<li>Base de données à maintenir</li>
+<li>Interface d’administration obligatoire</li>
+</ul>
+<p>Je ne voulais rien de tout ça.</p>
+<h2 id="ce-que-je-recherchais-vraiment">Ce que je recherchais vraiment</h2>
+<p>Je voulais un blog :</p>
+<ul>
+<li>🚀 <strong>Rapide</strong> — des pages qui se chargent en moins de 100 ms</li>
+<li>💸 <strong>Presque gratuit à héberger</strong> — contenu statique sur GitHub Pages</li>
+<li>🛠 <strong>Facile à maintenir</strong> — pas de base de données, pas de mises à jour critiques</li>
+<li>📁 <strong>Basé sur Markdown</strong> — contenu portable, éditable hors ligne, versionné</li>
+<li>🌍 <strong>Multilingue</strong> — parce que j’écris en français et en anglais</li>
+<li>🧩 <strong>Personnalisable</strong> — contrôle total sur la structure, les thèmes, et le rendu</li>
+</ul>
+<p>Hugo coche toutes ces cases.</p>
+<h2 id="pourquoi-hugo-sort-du-lot">Pourquoi Hugo sort du lot</h2>
+<p>Contrairement à d&rsquo;autres générateurs de sites statiques, Hugo est pensé pour la performance et la clarté :</p>
+<ul>
+<li>⚡ <strong>Ultra rapide</strong> — des milliers de pages générées en quelques millisecondes</li>
+<li>💡 Écrit en <strong>Go</strong>, un langage rapide, sûr et moderne</li>
+<li>🧱 <strong>Structure modulaire</strong> — permet de faire évoluer le site progressivement</li>
+<li>🌐 <strong>Support natif du multilingue</strong> — pas besoin de plugins</li>
+<li>✅ <strong>Parfaitement compatible avec GitHub Pages</strong> — avec CI/CD via GitHub Actions</li>
+</ul>
+<h2 id="il-correspond-à-ma-façon-de-développer">Il correspond à ma façon de développer</h2>
+<p>Mon blog est structuré comme un projet logiciel :</p>
+<ul>
+<li>J’écris en Markdown</li>
+<li>Je versionne avec Git</li>
+<li>Je prévisualise localement</li>
+<li>Je déploie automatiquement avec GitHub Actions</li>
+<li>Mon contenu vit dans mon dépôt, pas dans une base tierce</li>
+<li>Le site reste rapide sans JavaScript inutile</li>
+</ul>
+<p>Hugo respecte mon temps — pas de plugins capricieux, pas de mises à jour risquées, pas de serveur à surveiller.</p>
+<h2 id="une-vraie-valeur-à-long-terme">Une vraie valeur à long terme</h2>
+<p>Plus je travaille dans la tech, plus j’apprécie les outils simples et durables. Hugo, c’est :</p>
+<ul>
+<li>🧩 <strong>Portable</strong> — Markdown fonctionnera encore dans 10 ans</li>
+<li>💰 <strong>Économique</strong> — hébergement quasi gratuit</li>
+<li>🧘 <strong>Sérénité</strong> — surface d’attaque nulle, rien à mettre à jour</li>
+<li>🧪 <strong>Plaisir de développeur</strong> — tout est texte, Git, et logique</li>
+</ul>
+<p>Je ne cherche pas des buzzwords — je cherche des outils qui durent. Hugo est un choix qui fait gagner du temps aujourd’hui et demain.</p>
+<h2 id="en-résumé">En résumé</h2>
+<p>Hugo n’est pas qu’un moteur de blog — c’est une plateforme pour publier efficacement. Que vous soyez développeur, auteur ou indépendant, Hugo vous permet de créer un site rapide, simple à maintenir, et aligné avec vos idées — pas avec vos factures d’hébergement.</p>
+<p>Voilà pourquoi j’ai choisi Hugo.</p>
+<p>👉 En savoir plus sur <a href="https://gohugo.io/">gohugo.io</a></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
