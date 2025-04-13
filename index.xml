@@ -72,6 +72,15 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>Post de test</title>
+      <link>https://emmanuel-io.github.io/pages/demo-sveltia/</link>
+      <pubDate>Sun, 14 Apr 2024 08:00:00 +0400</pubDate>
+      <guid>https://emmanuel-io.github.io/pages/demo-sveltia/</guid>
+      <description>&lt;p&gt;Contenu du post de test.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Contenu du post de test.</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Deploying Hugo to GitHub Pages with CI/CD</title>
       <link>https://emmanuel-io.github.io/posts/set-hugo-2/</link>
       <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
