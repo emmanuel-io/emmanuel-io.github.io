@@ -296,11 +296,52 @@ Développement d’APIs publiques, de services backend et d’outils d’adminis
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://emmanuel-io.github.io/fr/about/</guid>
       <description>Développeur de solutions numériques | 25&#43; ans d’expérience | Axé sur la performance, la clarté et la valeur durable</description>
-      <content:encoded><![CDATA[<figure>
-    <img loading="lazy" src="/images/Atari_1040STf.jpg"/> <figcaption>
-            Tout a commencé avec ça, il y a longtemps
-        </figcaption>
-</figure>
+      <content:encoded><![CDATA[
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  <figure>
+    <picture>
+      <source type="image/webp"
+              srcset="/about/Atari-1040STf_hu_7f975b85dcda6e3.webp 512w" media="(max-width: 768px)">
+      <source type="image/webp"
+              srcset="/about/Atari-1040STf_hu_fdffe44c956a7b9c.webp 1024w">
+      <source type="image/jpeg/jpeg"
+              srcset="/about/Atari-1040STf_hu_9eafd81c316e4686.jpg 512w, /about/Atari-1040STf_hu_8d88a6b18bc369b4.jpg 1024w">
+      <img src="/about/Atari-1040STf_hu_8d88a6b18bc369b4.jpg"
+           alt="Tout a commencé avec ça, il y a longtemps"
+           width="1024"
+           height="696"
+           loading="lazy"
+           decoding="async"
+           sizes="(max-width: 768px) 100vw, 1024px">
+    </picture>
+    
+    <figcaption>Tout a commencé avec ça, il y a longtemps</figcaption>
+    
+  </figure>
+
 
 <h2 id="-salut-je-suis-emmanuel-io">👋 Salut, je suis emmanuel io</h2>
 <p><strong>Développeur de solutions numériques</strong><br>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on emmanuel io</title>
+    <link>https://emmanuel-io.github.io/posts/</link>
+    <description>Recent content in Posts on emmanuel io</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 11 Apr 2025 08:00:00 +0400</lastBuildDate>
+    <atom:link href="https://emmanuel-io.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why I Chose Hugo: Performance, Simplicity, and Long-Term Value</title>
+      <link>https://emmanuel-io.github.io/posts/why-choose-hugo/</link>
+      <pubDate>Fri, 11 Apr 2025 08:00:00 +0400</pubDate>
+      <guid>https://emmanuel-io.github.io/posts/why-choose-hugo/</guid>
+      <description>Discover why Hugo is the static site generator of choice for developers who value speed, control, and low maintenance. A personal reflection from a software engineer.</description>
+      <content:encoded><![CDATA[<p>As a backend developer focused on optimization and long-term value, I want tools that are fast, lean, and reliable. When building my personal blog and portfolio site, I needed a solution that matched the way I think and work — one that’s developer-friendly, low-maintenance, and future-proof.</p>
+<p>After evaluating the landscape, I chose <a href="https://gohugo.io/">Hugo</a> — an open-source static site generator — and haven’t looked back.</p>
+<h2 id="why-not-a-traditional-cms">Why not a traditional CMS?</h2>
+<p>Popular platforms like WordPress, Ghost, Medium, or Wix offer convenient interfaces and polished templates. But they come at a cost:</p>
+<ul>
+<li>Hosting fees and plugin lock-in</li>
+<li>Security updates and patch cycles</li>
+<li>Slow loading times without heavy caching</li>
+<li>Database maintenance and migration risk</li>
+<li>Dependency on a live admin dashboard</li>
+</ul>
+<p>I didn’t want any of that.</p>
+<h2 id="what-i-really-wanted">What I really wanted</h2>
+<p>I wanted a blog that is:</p>
+<ul>
+<li>🚀 <strong>Fast</strong> — page loads under 100ms</li>
+<li>💸 <strong>Cheap to host</strong> — static content deployable on free GitHub Pages</li>
+<li>🛠 <strong>Minimal to maintain</strong> — no database, no updates, no runtime environment</li>
+<li>📁 <strong>Markdown-first</strong> — content is portable, editable offline, and version-controlled</li>
+<li>🌍 <strong>Multilingual</strong> — because I write in both English and French</li>
+<li>🧩 <strong>Customizable</strong> — I want full control over structure, theme, and behavior</li>
+</ul>
+<p>Hugo ticked all those boxes.</p>
+<h2 id="why-hugo-stands-out">Why Hugo stands out</h2>
+<p>Unlike other static site generators, Hugo is built with performance and simplicity in mind:</p>
+<ul>
+<li>⚡ <strong>Blazing fast</strong> — Hugo can generate thousands of pages in milliseconds.</li>
+<li>🧠 <strong>Go-powered</strong> — written in the Go language, it’s fast and robust.</li>
+<li>🧱 <strong>Modular structure</strong> — perfect for evolving your site without rebuilding it from scratch.</li>
+<li>🌐 <strong>Built-in multilingual support</strong> — no plugins needed.</li>
+<li>✅ <strong>Works perfectly with GitHub Pages</strong> — and integrates easily with GitHub Actions for CI/CD.</li>
+</ul>
+<h2 id="it-aligns-with-how-i-build">It aligns with how I build</h2>
+<p>I treat my blog like code:</p>
+<ul>
+<li>I write in Markdown.</li>
+<li>I version everything with Git.</li>
+<li>I preview locally and deploy automatically via GitHub Actions.</li>
+<li>My content lives in my repo, not in someone else’s database.</li>
+<li>The site loads fast, even with no JavaScript.</li>
+</ul>
+<p>Hugo respects my time — no plugins to babysit, no broken updates, no servers to reboot.</p>
+<h2 id="long-term-value">Long-term value</h2>
+<p>The more I work in tech, the more I value tools that reduce complexity and create leverage. Hugo offers:</p>
+<ul>
+<li>🧩 <strong>Portability</strong> — Markdown and static assets will still work 10 years from now</li>
+<li>💰 <strong>Cost control</strong> — hosting is free or nearly free</li>
+<li>🧘 <strong>Peace of mind</strong> — no attack surface, no updates to break the site</li>
+<li>🧪 <strong>Developer joy</strong> — everything is text, Git, and logic</li>
+</ul>
+<p>I’m not interested in buzzwords — I’m interested in value over time. Hugo is a system that rewards you for keeping things simple.</p>
+<h2 id="in-summary">In summary</h2>
+<p>Hugo is not just a blog engine — it’s a platform for thoughtful publishing. Whether you&rsquo;re a developer, writer, or entrepreneur, it&rsquo;s a tool that helps you build fast, low-maintenance websites that scale with your ideas — not your hosting bills.</p>
+<p>That’s why I chose Hugo.</p>
+<p>👉 Learn more at <a href="https://gohugo.io/">gohugo.io</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Deploying Hugo to GitHub Pages with CI/CD</title>
+      <link>https://emmanuel-io.github.io/posts/set-hugo-2/</link>
+      <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
+      <guid>https://emmanuel-io.github.io/posts/set-hugo-2/</guid>
+      <description>Set up GitHub Actions and deploy your Hugo blog using SSH deploy keys and a dual-repo strategy.</description>
+      <content:encoded><![CDATA[<p>In part 1 we explored how I created a website using Hugo, now we are going to create a github action to automatically deploy the site on github pages when we create a commit.</p>
+<h3 id="set-up-of-git-repositories"><strong>Set up of Git repositories</strong></h3>
+<p>I created 2 GitHub repositories for the project:</p>
+<ol>
+<li>First Repository for the hugo project <code>emmanuel-io.github.io.hugo</code></li>
+<li>Second repository to host my blog as Github User page <code>emmanuel-io.github.io</code></li>
+</ol>
+<p>You can find on a lot of articles who are using 2 differents branches of the same repository (&ldquo;main&rdquo; for the project, &ldquo;gh_pages&rdquo; for the generated static files), however I prefere to have two distinct repositories, each one dealing with a different concern.</p>
+<p>Now go to the root of the project and execute below commands.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># create the .gitignore file</span>
+</span></span><span class="line"><span class="cl">touch .gitignore
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># add the public folder to the list of ignored files</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;public/&#34;</span> &gt;&gt;.gitignore 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># commit any uncommitted changes</span>
+</span></span><span class="line"><span class="cl">git commit -a -m <span class="s2">&#34;init&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># set remote origin branch</span>
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/emmanuel-io/emmanuel-io.github.io.hugo.git
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># push changes</span>
+</span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></div><p>I have ignored the <code>public</code> directory as we don&rsquo;t need to handle it in the repository.</p>
+<p>Now we need to generate a pair of public/private keys to be able to use github actions from the 1st directory to write in the 2nd repository.
+To understand what I did, you can check these links from the <a href="https://github.com/marketplace/actions/github-pages-action">GitHub Action</a> used to deploy my hugo website.</p>
+<p>Have a particular look at this part:
+<a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-create-ssh-deploy-key">Create SSH Deploy Key</a></p>
+<p>Do as stated but <strong>NOT IN YOUR PROJECT DIRECTORY !!!</strong></p>
+<p>Now in the root directory I created a github workflow yaml file to make sure that every time I push to remote, my blog is updated by github. In VSCode I created this file in &ldquo;.github/workflows/deploy.yml&rdquo;</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl"># A workflow run is made up of one or more jobs that can run sequentially or in parallel
+</span></span><span class="line"><span class="cl">jobs:
+</span></span><span class="line"><span class="cl">  # This workflow contains a single job called &#34;deploy&#34;
+</span></span><span class="line"><span class="cl">  deploy:
+</span></span><span class="line"><span class="cl">    # The type of runner that the job will run on
+</span></span><span class="line"><span class="cl">    runs-on: ubuntu-latest
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    # Steps represent a sequence of tasks that will be executed as part of the job
+</span></span><span class="line"><span class="cl">    steps:
+</span></span><span class="line"><span class="cl">      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+</span></span><span class="line"><span class="cl">      - uses: actions/checkout@v2
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">          submodules: true
+</span></span><span class="line"><span class="cl">          fetch-depth: 0
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      # Github Actions fo Hugo
+</span></span><span class="line"><span class="cl">      - name: Setup Hugo
+</span></span><span class="line"><span class="cl">        uses: peaceiris/actions-hugo@v2
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">          hugo-version: &#34;latest&#34;
+</span></span><span class="line"><span class="cl">          extended: true
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      # Creates ./public directory
+</span></span><span class="line"><span class="cl">      - name: Build
+</span></span><span class="line"><span class="cl">        run: hugo --minify
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      # Upload/Commit the contents from publish_dir -&gt; external_repository
+</span></span><span class="line"><span class="cl">      - name: Deploy
+</span></span><span class="line"><span class="cl">        uses: peaceiris/actions-gh-pages@v3
+</span></span><span class="line"><span class="cl">        if: ${{ github.ref == &#39;refs/heads/main&#39; }}
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+</span></span><span class="line"><span class="cl">          # github_token: ${{ secrets.GITHUB_TOKEN }}
+</span></span><span class="line"><span class="cl">          personal_token: ${{secrets.GH_TOKEN}}
+</span></span><span class="line"><span class="cl">          publish_dir: ./public
+</span></span><span class="line"><span class="cl">          external_repository: emmanuel-io/emmanuel-io.github.io
+</span></span><span class="line"><span class="cl">          publish_branch: main
+</span></span><span class="line"><span class="cl">          user_name: emadio
+</span></span><span class="line"><span class="cl">          user_email: emmanuel.amadio@mail.com
+</span></span></code></pre></div><h3 id="push-your-content"><strong>Push your content</strong></h3>
+<p>Now we have set up our repositories and created our static content in <code>public</code> directory . The only step remain is pushing our local content to GitHub. Lets do that now. Run below commands in the terminal</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># commit any uncommitted changes</span>
+</span></span><span class="line"><span class="cl">git commit -a -m <span class="s2">&#34;deploy with actions&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># push changes</span>
+</span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></div><p>And thats it.</p>
+<p>Now my blog is updated on every push :-)</p>
+<p>You can match your content and configuration with below repositories. The only difference is the value of <code>baseurl</code> that is because I have set up this demo website as Project Site and not the User Site.</p>
+<ol>
+<li><a href="https://github.com/emmanuel-io/emmanuel-io.github.io.hugo">&ldquo;hugo&rdquo; Project Repository</a></li>
+<li><a href="https://emmanuel-io.github.io/">Blog Repository</a></li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Setting up Hugo locally with Git and a theme</title>
+      <link>https://emmanuel-io.github.io/posts/set-hugo-1/</link>
+      <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
+      <guid>https://emmanuel-io.github.io/posts/set-hugo-1/</guid>
+      <description>Learn how to set up a Hugo blog from scratch using Git, submodules, and a starter theme.</description>
+      <content:encoded><![CDATA[<p>I needed a space to showcase my work, share ideas, and write articles — whether tutorials, reviews, editorials, or blog posts. GitHub is great for hosting code, but I wanted a space of my own online. This blog also serves as my digital portfolio.</p>
+<h2 id="what-were-the-options-for-blogging">What were the options for blogging?</h2>
+<p>Some popular options for getting started with a blog include:</p>
+<ul>
+<li><a href="https://wordpress.com/">WordPress</a></li>
+<li><a href="https://medium.com/">Medium</a></li>
+<li><a href="https://ghost.org/">Ghost</a></li>
+<li><a href="https://www.wix.com/blog">Wix</a></li>
+</ul>
+<p>These platforms offer end-to-end solutions with nice features like:</p>
+<ul>
+<li>Focus on content with built-in formatting</li>
+<li>SEO optimization</li>
+<li>In-browser editing interfaces</li>
+<li>Media and plugin support</li>
+<li>Abstracted handling of themes, databases, hosting, and updates</li>
+</ul>
+<p>But I wanted something free, minimal, and fully under my control.</p>
+<p>GitHub Pages offers <a href="https://pages.github.com/">free hosting for static content</a> — no backend, no database — just HTML, CSS, JS. That constraint inspired me to explore <strong>static site generators</strong>.</p>
+<blockquote>
+<p>🚧 <em>My reasons for choosing Hugo, and a deeper look at why I use it, will be covered in a dedicated follow-up post.</em></p></blockquote>
+<hr>
+<h2 id="setting-up-the-blog">Setting up the blog</h2>
+<p>I followed this 5-step process (inspired by <a href="https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/">Bhanu Chaddha&rsquo;s article</a>):</p>
+<ol>
+<li>Install Hugo</li>
+<li>Create a project</li>
+<li>Set up Git</li>
+<li>Install a theme via submodule</li>
+<li>Add content and run the site</li>
+</ol>
+<p>Everything below is based on my experience using Ubuntu 22.04. You may want to adapt it using the <a href="https://gohugo.io/getting-started/installing/">official Hugo setup instructions</a>.</p>
+<hr>
+<h3 id="1-install-hugo">1. Install Hugo</h3>
+<p>On Ubuntu:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo snap install hugo --channel<span class="o">=</span>extended
+</span></span></code></pre></div><p>Then verify the installation:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo version
+</span></span></code></pre></div><p>You should see output similar to:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">hugo v0.96.0+extended linux/amd64 BuildDate=2022-03-26T09:15:58Z
+</span></span></code></pre></div><hr>
+<h3 id="2-create-your-hugo-project">2. Create your Hugo project</h3>
+<p>Navigate to the folder where you want your blog project to live:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/Documents
+</span></span><span class="line"><span class="cl">hugo new site emmanuel-io-github-io-hugo
+</span></span></code></pre></div><p>This will create the Hugo project structure:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Congratulations! Your new Hugo site is created in /home/emmanuel/Documents/emmanuel-io-github-io-hugo.
+</span></span></code></pre></div><hr>
+<h3 id="3-initialize-git">3. Initialize Git</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> emmanuel-io-github-io-hugo
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git branch -m main  <span class="c1"># If your default is still &#39;master&#39;</span>
+</span></span></code></pre></div><hr>
+<h3 id="4-install-a-theme-using-git-submodule">4. Install a theme using Git submodule</h3>
+<p>For this blog, I used the <a href="https://themes.gohugo.io/themes/gohugo-theme-ananke/">Ananke theme</a>. I added it as a submodule to keep it clean and version-controlled:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+</span></span></code></pre></div><hr>
+<h3 id="5-add-example-configuration-and-content">5. Add example configuration and content</h3>
+<p>To get a working site quickly, I copied the sample content and config from the theme:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp -R ./themes/ananke/exampleSite/<span class="o">{</span>config.toml,content*,static*<span class="o">}</span> ./
+</span></span></code></pre></div><hr>
+<h3 id="6-run-the-hugo-development-server">6. Run the Hugo development server</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo server
+</span></span></code></pre></div><p>Open <a href="http://localhost:1313">http://localhost:1313</a> in your browser to view the site.</p>
+<hr>
+<h3 id="7-start-customizing">7. Start customizing</h3>
+<p>At this point, I began adapting the configuration and writing my first content.</p>
+<p>👉 <em>In the next post, I’ll cover how I structured the blog, added multilingual support, integrated GitHub Actions, and customized the theme.</em></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
