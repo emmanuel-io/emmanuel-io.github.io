@@ -242,7 +242,7 @@ To understand what I did, you can check these links from the <a href="https://gi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://emmanuel-io.github.io/fr/cv/</guid>
       <description>Version en ligne de mon CV — expériences, compétences, parcours.</description>
-      <content:encoded><![CDATA[<p>📄 <a href="../cv/emmanuel-amadio-cv.pdf">Télécharger la version PDF (en anglais)</a></p>
+      <content:encoded><![CDATA[<p>📄 <a href="/emmanuel-amadio-cv.pdf">Télécharger la version PDF (en anglais)</a></p>
 <h1 id="-emmanuel-amadio-emmanuel-io">👋 Emmanuel Amadio (emmanuel io)</h1>
 <p><strong>Ingénieur logiciel freelance</strong> — Python · SQL · Systèmes performants · 100 % à distance</p>
 <hr>
