@@ -4,10 +4,102 @@
     <title>Reflections on emmanuel io</title>
     <link>https://emmanuel-io.github.io/fr/categories/reflections/</link>
     <description>Recent content in Reflections on emmanuel io</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Fri, 11 Apr 2025 08:00:00 +0400</lastBuildDate>
+    <lastBuildDate>Thu, 01 May 2025 23:00:00 +0400</lastBuildDate>
     <atom:link href="https://emmanuel-io.github.io/fr/categories/reflections/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comment j&#39;ai migré un site WordPress vers un nouveau plan d&#39;hébergement et évité un prix de renouvellement élevé</title>
+      <link>https://emmanuel-io.github.io/fr/posts/wordpress-site-migration-hostinger-renewal-cost/</link>
+      <pubDate>Thu, 01 May 2025 23:00:00 +0400</pubDate>
+      <guid>https://emmanuel-io.github.io/fr/posts/wordpress-site-migration-hostinger-renewal-cost/</guid>
+      <description>Découvrez comment migrer un site WordPress entre des plans d&amp;#39;hébergement, éviter des frais de renouvellement élevés et résoudre des problèmes comme les préfixes dans .htaccess causant des erreurs 500.</description>
+      <content:encoded><![CDATA[<h2 id="contexte--la-décision-de-migration">Contexte : La décision de migration</h2>
+<p>Face au coût élevé du renouvellement d&rsquo;un plan d&rsquo;hébergement, j&rsquo;ai dû faire un choix : soit payer pour une nouvelle année, soit déplacer le site vers un plan plus abordable. Comme le site est plus un outil de <strong>branding</strong> pour son auteur qu&rsquo;une machine générant des revenus, l&rsquo;option la plus <strong>économique</strong> s&rsquo;est imposée. Après tout, il ne s&rsquo;agissait pas de rentabilité — mais de maintenir le site sans le fardeau des frais de renouvellement élevés.</p>
+<p>Étant impliqué dans ce projet <strong>pro bono</strong>, je cherchais des moyens de maintenir les coûts bas jusqu&rsquo;à ce que l&rsquo;objectif ultime soit réalisé : <strong>migrer tout vers Hugo</strong>. Cela demandera une <strong>planification minutieuse</strong> étant donné qu&rsquo;il y a plus de <strong>3 000 articles</strong> à prendre en compte. Mais pour l&rsquo;instant, la priorité était d&rsquo;éviter de payer un prix élevé de renouvellement tout en gardant le contrôle du site.</p>
+<p>J&rsquo;ai donc opté pour <strong>migrer le site WordPress</strong> vers un plan d&rsquo;hébergement plus abordable. Ce n&rsquo;était pas aussi simple que je l&rsquo;avais imaginé, mais l&rsquo;objectif était clair : déplacer le site, <strong>économiser sur les frais de renouvellement</strong>, et espérer apprendre quelque chose en cours de route. 🚀</p>
+<hr>
+<h2 id="étape-1--sauvegarde-la-méthode-facile">Étape 1 : Sauvegarde, la méthode facile</h2>
+<p>La première étape de la migration a été de sauvegarder l&rsquo;ensemble du site WordPress — y compris les <strong>fichiers</strong> et la <strong>base de données</strong>. Pour cela, j&rsquo;ai profité des <strong>méthodes faciles</strong> proposées par Hostinger, qui offraient un moyen simple de créer un fichier tar.gz pour l&rsquo;ensemble du site et une sauvegarde de la base de données via leur interface hPanel. Ces étapes étaient simples et m&rsquo;ont fait gagner beaucoup de temps pour mettre en place les sauvegardes, le temps de me préparer un café ☕.</p>
+<h2 id="étape-2--défis-liés-au-téléchargement">Étape 2 : Défis liés au téléchargement</h2>
+<p>Le véritable défi est survenu lorsque j&rsquo;ai essayé de télécharger le tarball que je venais de télécharger. Le fichier de <strong>30 Go</strong> était bien trop volumineux pour être téléchargé en une seule fois via le client web : avec un temps estimé de transfert de 8 heures — une durée beaucoup trop longue — c&rsquo;était tout simplement trop lent et, franchement, risqué de se fier à cette méthode.<br>
+Surtout avec une connexion à <strong>1 Mo/s</strong>, probablement limitée par l&rsquo;interface web. 😤</p>
+<p>C&rsquo;est à ce moment que j&rsquo;ai vérifié si l&rsquo;accès <strong>SFTP</strong> et <strong>SSH</strong> étaient disponibles sur mon plan. Cela a été un véritable <strong>tournant</strong> : cela m&rsquo;a donné beaucoup plus de contrôle sur le processus de transfert. Et j&rsquo;ai pu télécharger les fichiers à <strong>deux fois la vitesse</strong> du client web. ⚡</p>
+<p>Avec l&rsquo;accès SSH en main, je me suis assuré que les commandes <code>cat</code> et <code>tar</code> étaient disponibles sur le serveur (on n&rsquo;est jamais trop sûr). Puis après avoir découpé mon archive en plusieurs fichiers, j&rsquo;ai pu télécharger les parties via SFTP et, une fois toutes les parties sur le serveur, j&rsquo;ai réassemblé les fichiers dans le fichier tar.gz d&rsquo;origine avant de les extraire. Cette méthode a fourni plus de stabilité et de vitesse que de se fier à l&rsquo;interface web.</p>
+<p>Résumé des étapes pour le téléchargement des fichiers :</p>
+<ol>
+<li>Découper l&rsquo;archive localement.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">split -b 1G large_backup.tar.gz large_backup_part_
+</span></span></code></pre></div><ol start="2">
+<li>
+<p>Télécharger les parties vers le nouvel hébergement en utilisant SFTP.</p>
+</li>
+<li>
+<p><strong>SSH</strong> sur le nouveau serveur.</p>
+</li>
+<li>
+<p>Réassembler les parties.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat large_backup_part_* &gt; large_backup.tar.gz
+</span></span></code></pre></div><ol start="5">
+<li>Extraire les fichiers.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tar -xzvf large_backup.tar.gz -C public_html
+</span></span></code></pre></div><ol start="6">
+<li>Enfin, déplacer les fichiers extraits là où c&rsquo;est nécessaire.</li>
+</ol>
+<p><strong>Remarque</strong> : À ce moment-là, je commençais à douter de ma décision. Le temps que je passais ici aurait sûrement pu être utilisé ailleurs, peut-être en payant le renouvellement et en gardant les choses simples. 🤔</p>
+<h2 id="étape-3--la-migration-ou-comment-jai-tout-cassé">Étape 3 : La migration ou comment j&rsquo;ai tout cassé</h2>
+<p>Une fois les fichiers téléchargés sur le nouveau plan, l&rsquo;étape suivante était la migration de la base de données. L&rsquo;importation de la base de données via <strong>phpMyAdmin</strong> s&rsquo;est très bien passée, j&rsquo;ai simplement supprimé toutes les tables existantes avant l&rsquo;importation, et voilà. ✔️</p>
+<p>Passons maintenant à la configuration de WordPress pour utiliser cette base en éditant <code>wp-config.php</code>.</p>
+<ol>
+<li>J&rsquo;ai mis à jour les détails de la base de données dans <code>wp-config.php</code> :</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_NAME&#39;</span><span class="p">,</span> <span class="s1">&#39;new_database_name&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_USER&#39;</span><span class="p">,</span> <span class="s1">&#39;new_database_user&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_PASSWORD&#39;</span><span class="p">,</span> <span class="s1">&#39;new_database_password&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_HOST&#39;</span><span class="p">,</span> <span class="s1">&#39;new_database_host&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><ol start="2">
+<li>Mettre à jour les URL du site dans la table <code>wp_options</code> de la base de données pour pointer vers le nouveau domaine :</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">UPDATE</span><span class="w"> </span><span class="n">wp_options</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">option_value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;http://yournewdomain.com&#39;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">option_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;siteurl&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">option_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;home&#39;</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><h2 id="étape-4--le-problème-htaccess---une-leçon-de-dépannage">Étape 4 : Le problème <code>.htaccess</code> - Une leçon de dépannage</h2>
+<p>Tout allait bien jusqu&rsquo;ici. Mais lorsque j&rsquo;ai testé le site, j&rsquo;ai rencontré un problème.</p>
+<p>C&rsquo;est là que les choses sont devenues intéressantes. Après avoir migré le site et effectué les tests, je me suis retrouvé face à une erreur <strong>500 serveur interne</strong>.<br>
+Il s&rsquo;avère que mon fidèle fichier <code>.htaccess</code> avait des règles de <strong>préfixage</strong>; merci au plugin <strong>Wordfence</strong> qui causait des conflits avec les redirections de WordPress.</p>
+<p>Le plugin préfixait le mauvais chemin, ce qui a conduit à des redirections cassées. Un peu de fouille dans le fichier <code>.htaccess</code> a révélé le problème.</p>
+<p>Voici une version anonymisée de la section problématique :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-apache" data-lang="apache"><span class="line"><span class="cl"><span class="c"># Wordfence WAF</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;IfModule</span> <span class="s">LiteSpeed</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">php_value</span> auto_prepend_file &#39;/home/user-identifier/domains/politicothon.com/public_html/wordfence-waf.php&#39;
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/IfModule&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;IfModule</span> <span class="s">lsapi_module</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">php_value</span> auto_prepend_file &#39;/home/user-identifier/domains/politicothon.com/public_html/wordfence-waf.php&#39;
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/IfModule&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># FIN Wordfence WAF</span>
+</span></span></code></pre></div><p><strong>La solution</strong> : J&rsquo;ai simplement commenté les lignes défectueuses, en m&rsquo;assurant que les redirections fonctionnaient correctement, puis j&rsquo;ai réinitialisé les modifications de <code>.htaccess</code> depuis le plugin. Ça a finalement fonctionné. 🎉</p>
+<h2 id="étape-5--déplacement-des-emails-et-autres-tâches-imprévues">Étape 5 : Déplacement des emails et autres tâches imprévues</h2>
+<p>Bien sûr, aucune migration n&rsquo;est complète sans le déplacement des emails. Heureusement, Hostinger a facilité ce processus.</p>
+<h2 id="tests-finaux-et-ajustements">Tests finaux et ajustements</h2>
+<p>Une fois que tout a été téléchargé, configuré, et que la plupart des problèmes ont été résolus, j&rsquo;ai effectué quelques vérifications finales :</p>
+<ol>
+<li><strong>Vider les permaliens</strong> dans WordPress : Cela a permis d&rsquo;assurer l&rsquo;absence de liens cassés.</li>
+<li><strong>Tester le site</strong> : J&rsquo;ai visité manuellement le site pour vérifier que toutes les pages, publications et médias étaient intacts.</li>
+<li><strong>Vérifier les emails</strong> : J&rsquo;ai envoyé et reçu quelques emails de test pour confirmer la réussite de la migration. ✅</li>
+</ol>
+<hr>
+<p>Conclusion : Le temps passé en valait-il la peine ?
+En repensant à la migration, c&rsquo;était une expérience d&rsquo;apprentissage. Bien sûr, j&rsquo;ai économisé sur le coût du renouvellement, mais le temps passé à résoudre des problèmes, déplacer des fichiers, gérer les soucis de .htaccess et transférer les emails m&rsquo;a probablement coûté plus en temps que simplement renouveler le plan.</p>
+<p>Mais au final, j&rsquo;ai acquis une compréhension précieuse des configurations WordPress, du dépannage côté serveur et de la gestion d&rsquo;hébergement. C&rsquo;est une leçon qui m&rsquo;aidera assurément lors de futures migrations — bien que la prochaine fois, je pourrais simplement payer le renouvellement et éviter les tracas. Après tout, <strong>Le temps c&rsquo;est de l&rsquo;argent.</strong></p>
+<p>À venir : Migrer un site WordPress vers Hugo
+Si la migration de WordPress à WordPress a été correcte, la prochaine fois, je vais relever le défi de passer de WordPress à Hugo. Ce sera sûrement une aventure bien plus complexe — et cette fois, je pourrais même gagner plus de temps (ou dépenser moins dans le processus !).</p>
+<hr>
+<p><strong>Leçon apprise</strong> : Parfois, la <strong>commodité de ne pas bouger</strong> se paye par le <strong>temps passé</strong> dans le processus. 😜</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Pourquoi j’ai choisi Hugo : performance, simplicité et valeur durable</title>
       <link>https://emmanuel-io.github.io/fr/posts/why-choose-hugo/</link>

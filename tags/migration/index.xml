@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Migration on emmanuel io</title>
+    <link>https://emmanuel-io.github.io/tags/migration/</link>
+    <description>Recent content in Migration on emmanuel io</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 01 May 2025 23:00:00 +0400</lastBuildDate>
+    <atom:link href="https://emmanuel-io.github.io/tags/migration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I migrated a WordPress Site to a new hosting plan and avoided a huge renewal price</title>
+      <link>https://emmanuel-io.github.io/posts/wordpress-site-migration-hostinger-renewal-cost/</link>
+      <pubDate>Thu, 01 May 2025 23:00:00 +0400</pubDate>
+      <guid>https://emmanuel-io.github.io/posts/wordpress-site-migration-hostinger-renewal-cost/</guid>
+      <description>Learn how to migrate a WordPress site between hosting plans, avoid high renewal fees, and troubleshoot issues like .htaccess prepends causing 500 errors.</description>
+      <content:encoded><![CDATA[<h2 id="context-the-migration-decision">Context: The migration decision</h2>
+<p>When faced with the high renewal cost of a hosting plan, I had to make a choice: either pay up for another year or move the site to a more affordable plan. Since the site is more of a branding tool for its writer than a revenue-generating machine, the budget-friendly option was the clear winner. After all, this wasn’t about profitability — it was about maintaining the site without the burden of high renewal costs.</p>
+<p>Given that my involvement in this project is pro bono, I’ve been looking for ways to keep costs low until the ultimate goal is realized: <strong>migrating everything to Hugo</strong>. This will take careful planning since there are <strong>over 3,000 articles</strong> to account for. But for now, the priority was to avoid paying a steep renewal price while maintaining control over the site.</p>
+<p>So, I opted to move the WordPress site to a more affordable hosting plan. It wasn’t as simple as I expected, but the goal was clear: move the site, <strong>save on renewal fees</strong>, and hopefully learn something along the way. 🚀</p>
+<hr>
+<h2 id="step-1-backup-the-easy-way">Step 1: Backup, the easy way</h2>
+<p>The first step in the migration was backing up the entire WordPress site — including both the files and the database. For this, I took advantage of the easy routes provided by Hostinger, which offered a simple way to create a tar.gz file for the entire site and a database backup through their hPanel UI. These steps were straightforward and saved a lot of time in setting up the backups, I could prepare myself a coffee in the meantime. ☕</p>
+<h2 id="step-2-upload-challenges">Step 2: Upload challenges</h2>
+<p>The real challenge came when I tried to upload the tarball I just downloaded. The 30GB file was far too large for a single upload through the web client: with an estimated transfer time of 8 hours — a duration that was way too long — it was just too slow and, frankly, risky to rely on this method.<br>
+Especially with a 1MB/s connection, which was likely throttled by the web interface. 😤</p>
+<p>That’s when I checked if SFTP and SSH access were available on my plan. This turned out to be a game-changer: it gave me much more control over the transfer process. And I was able to upload files at twice the speed of the web client. ⚡</p>
+<p>With SSH access in hand, I made sure the <code>cat</code> and <code>tar</code> commands were available on the server (you&rsquo;re never too sure). Then after splitting my archive into multiple files, I was able to upload the parts using SFTP and, once all the parts were on the server, I reassembled the files into the original tar.gz archive before unpacking them. This method provided more stability and speed than relying on the web interface.</p>
+<p>Steps summary for file upload:</p>
+<ol>
+<li>Split the archive on local.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">split -b 1G large_backup.tar.gz large_backup_part_
+</span></span></code></pre></div><ol start="2">
+<li>
+<p>Upload the parts to the new host using sftp.</p>
+</li>
+<li>
+<p><strong>SSH</strong> into the new host.</p>
+</li>
+<li>
+<p>Reassemble the parts.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat large_backup_part_* &gt; large_backup.tar.gz
+</span></span></code></pre></div><ol start="5">
+<li>Extract the files.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tar -xzvf large_backup.tar.gz -C public_html
+</span></span></code></pre></div><ol start="6">
+<li>Finally, move the extracted files where needed.</li>
+</ol>
+<p><strong>Side note</strong>: At this point, I was starting to question my decision. Surely the time I was spending here could have been spent elsewhere, maybe paying the renewal and keeping things simple. 🤔</p>
+<h2 id="step-3-the-migration-or-how-i-broke-everything">Step 3: The migration or how I broke everything</h2>
+<p>Once the files were uploaded to the new plan, the next step was the database migration. Importing the database via <strong>phpMyAdmin</strong> was super smooth, I just removed all the existing tables before the import and voila. ✔️</p>
+<p>Now let&rsquo;s configure WordPress to use this db by editing <code>wp-config.php</code>.</p>
+<ol>
+<li>I updated the database details in <code>wp-config.php</code>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_NAME&#39;</span><span class="p">,</span> <span class="s1">&#39;new_database_name&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_USER&#39;</span><span class="p">,</span> <span class="s1">&#39;new_database_user&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_PASSWORD&#39;</span><span class="p">,</span> <span class="s1">&#39;new_database_password&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_HOST&#39;</span><span class="p">,</span> <span class="s1">&#39;new_database_host&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><ol start="2">
+<li>Update site URLs in the database <code>wp_options</code> table to point to the new domain:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">UPDATE</span><span class="w"> </span><span class="n">wp_options</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">option_value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;http://yournewdomain.com&#39;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">option_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;siteurl&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">option_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;home&#39;</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><h2 id="step-4-the-htaccess-issue---a-lesson-in-troubleshooting">Step 4: The <code>.htaccess</code> issue - A lesson in troubleshooting</h2>
+<p>So far, so good. But when I went to test the site, I encountered an issue.</p>
+<p>Here’s where things got fun. After migrating the site and testing, I was faced with 500 internal server error.<br>
+Turns out, my trusty <code>.htaccess</code> file had some prepending rules; thanks to the Wordfence plugin that caused conflicts with the WordPress redirects.</p>
+<p>Turns out that the plugin was prepending the wrong path, leading to broken redirects. A little digging in the <code>.htaccess</code> file revealed the issue.</p>
+<p>Here’s a anonymized version of the problematic section:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-apache" data-lang="apache"><span class="line"><span class="cl"><span class="c"># Wordfence WAF</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;IfModule</span> <span class="s">LiteSpeed</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">php_value</span> auto_prepend_file &#39;/home/user-identifier/domains/politicothon.com/public_html/wordfence-waf.php&#39;
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/IfModule&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;IfModule</span> <span class="s">lsapi_module</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">php_value</span> auto_prepend_file &#39;/home/user-identifier/domains/politicothon.com/public_html/wordfence-waf.php&#39;
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/IfModule&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># END Wordfence WAF</span>
+</span></span></code></pre></div><p><strong>The Fix:</strong> I just commented out the faulty lines, ensuring that the redirects were working properly, and retriggered the htaccess modifications from the plugin. It finally worked. 🎉</p>
+<h2 id="step-5-moving-emails-and-other-unexpected-tasks">Step 5: Moving emails and other unexpected tasks</h2>
+<p>Of course, no migration is ever just about the site files. I also had to move the emails. Thankfully, Hostinger’s made this relatively painless.</p>
+<h2 id="final-testing-and-adjustments">Final testing and adjustments</h2>
+<p>By now, everything was uploaded, configured, and most issues were resolved. But like any migration, I did some final checks:</p>
+<ol>
+<li><strong>Flush Permalinks</strong> in WordPress: This ensured no broken links.</li>
+<li><strong>Test the site</strong>: I manually visited the site to verify latest pages, posts, and media were intact.</li>
+<li><strong>Verify emails</strong>: I sent and received a few test emails to confirm success. ✅</li>
+</ol>
+<hr>
+<h2 id="conclusion-is-the-time-spent-worth-it">Conclusion: is the time spent worth it?</h2>
+<p>Looking back, the migration was a learning experience. Sure, I saved on the renewal cost, but the time spent troubleshooting, moving files, dealing with .htaccess issues, and transferring emails likely cost me more in time than simply renewing the plan.</p>
+<p>But in the end, I gained valuable insight into WordPress configurations, server-side troubleshooting, and hosting management. It’s a lesson that will definitely help me in future migrations — though next time, I might just pay the renewal and avoid the hassle. <strong>Time is money</strong>, after all.</p>
+<h3 id="next-up-moving-a-wordpress-site-to-hugo">Next Up: Moving a WordPress Site to Hugo</h3>
+<p>If WordPress to WordPress migration was ok, next time, I’m going to take on the challenge of moving from WordPress to Hugo. It&rsquo;s bound to be a much more challenging adventure — and this time, I might even save more time (or spend less in the process!).</p>
+<hr>
+<p><strong>Lesson learned</strong>: Sometimes, the <strong>convenience of not moving</strong> comes at the cost of the <strong>time spent</strong> in the process. 😜</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://emmanuel-io.github.io/tags/blog/</loc>
-    <lastmod>2025-04-11T08:00:00+04:00</lastmod>
+    <lastmod>2025-05-01T23:00:00+04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -18,7 +18,7 @@
                 />
   </url><url>
     <loc>https://emmanuel-io.github.io/categories/</loc>
-    <lastmod>2025-04-11T08:00:00+04:00</lastmod>
+    <lastmod>2025-05-01T23:00:00+04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -33,7 +33,7 @@
                 />
   </url><url>
     <loc>https://emmanuel-io.github.io/</loc>
-    <lastmod>2025-04-11T08:00:00+04:00</lastmod>
+    <lastmod>2025-05-01T23:00:00+04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -45,6 +45,111 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://emmanuel-io.github.io/"
+                />
+  </url><url>
+    <loc>https://emmanuel-io.github.io/tags/hosting/</loc>
+    <lastmod>2025-05-01T23:00:00+04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.github.io/fr/tags/hosting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://emmanuel-io.github.io/tags/hosting/"
+                />
+  </url><url>
+    <loc>https://emmanuel-io.github.io/posts/wordpress-site-migration-hostinger-renewal-cost/</loc>
+    <lastmod>2025-05-01T23:00:00+04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.github.io/fr/posts/wordpress-site-migration-hostinger-renewal-cost/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://emmanuel-io.github.io/posts/wordpress-site-migration-hostinger-renewal-cost/"
+                />
+  </url><url>
+    <loc>https://emmanuel-io.github.io/tags/migration/</loc>
+    <lastmod>2025-05-01T23:00:00+04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.github.io/fr/tags/migration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://emmanuel-io.github.io/tags/migration/"
+                />
+  </url><url>
+    <loc>https://emmanuel-io.github.io/posts/</loc>
+    <lastmod>2025-05-01T23:00:00+04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.github.io/fr/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://emmanuel-io.github.io/posts/"
+                />
+  </url><url>
+    <loc>https://emmanuel-io.github.io/categories/reflections/</loc>
+    <lastmod>2025-05-01T23:00:00+04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.github.io/fr/categories/reflections/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://emmanuel-io.github.io/categories/reflections/"
+                />
+  </url><url>
+    <loc>https://emmanuel-io.github.io/tags/</loc>
+    <lastmod>2025-05-01T23:00:00+04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.github.io/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://emmanuel-io.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://emmanuel-io.github.io/tags/wordpress/</loc>
+    <lastmod>2025-05-01T23:00:00+04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.github.io/fr/tags/wordpress/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://emmanuel-io.github.io/tags/wordpress/"
                 />
   </url><url>
     <loc>https://emmanuel-io.github.io/tags/hugo/</loc>
@@ -92,36 +197,6 @@
                 href="https://emmanuel-io.github.io/tags/performance/"
                 />
   </url><url>
-    <loc>https://emmanuel-io.github.io/posts/</loc>
-    <lastmod>2025-04-11T08:00:00+04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.github.io/fr/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.github.io/posts/"
-                />
-  </url><url>
-    <loc>https://emmanuel-io.github.io/categories/reflections/</loc>
-    <lastmod>2025-04-11T08:00:00+04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.github.io/fr/categories/reflections/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.github.io/categories/reflections/"
-                />
-  </url><url>
     <loc>https://emmanuel-io.github.io/tags/static-site-generator/</loc>
     <lastmod>2025-04-11T08:00:00+04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -135,21 +210,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://emmanuel-io.github.io/tags/static-site-generator/"
-                />
-  </url><url>
-    <loc>https://emmanuel-io.github.io/tags/</loc>
-    <lastmod>2025-04-11T08:00:00+04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.github.io/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.github.io/tags/"
                 />
   </url><url>
     <loc>https://emmanuel-io.github.io/posts/why-choose-hugo/</loc>
