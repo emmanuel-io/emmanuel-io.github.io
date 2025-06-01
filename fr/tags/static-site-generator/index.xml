@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Static-Site-Generator on emmanuel io</title>
-    <link>https://emmanuel-io.github.io/fr/tags/static-site-generator/</link>
+    <link>https://emmanuel-io.com/fr/tags/static-site-generator/</link>
     <description>Recent content in Static-Site-Generator on emmanuel io</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>fr-FR</language>
     <lastBuildDate>Fri, 11 Apr 2025 08:00:00 +0400</lastBuildDate>
-    <atom:link href="https://emmanuel-io.github.io/fr/tags/static-site-generator/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://emmanuel-io.com/fr/tags/static-site-generator/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pourquoi j’ai choisi Hugo : performance, simplicité et valeur durable</title>
-      <link>https://emmanuel-io.github.io/fr/posts/why-choose-hugo/</link>
+      <link>https://emmanuel-io.com/fr/posts/why-choose-hugo/</link>
       <pubDate>Fri, 11 Apr 2025 08:00:00 +0400</pubDate>
-      <guid>https://emmanuel-io.github.io/fr/posts/why-choose-hugo/</guid>
+      <guid>https://emmanuel-io.com/fr/posts/why-choose-hugo/</guid>
       <description>Découvrez pourquoi Hugo est le générateur de site statique idéal pour les développeurs qui recherchent vitesse, contrôle et faible maintenance. Une réflexion personnelle d’un ingénieur logiciel.</description>
       <content:encoded><![CDATA[<p>En tant que développeur backend soucieux d’optimisation et de valeur à long terme, je cherche des outils rapides, sobres et fiables. Pour créer mon blog et portfolio, je voulais une solution qui colle à ma manière de penser et de travailler : conviviale pour les développeurs, simple à maintenir, et pérenne.</p>
 <p>Après avoir comparé les options, j’ai choisi <a href="https://gohugo.io/">Hugo</a> — un générateur de site statique open-source — et je ne le regrette pas.</p>

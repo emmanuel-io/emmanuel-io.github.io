@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>emmanuel io</title>
-    <link>https://emmanuel-io.github.io/fr/</link>
+    <link>https://emmanuel-io.com/fr/</link>
     <description>Recent content on emmanuel io</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>fr-FR</language>
     <lastBuildDate>Thu, 01 May 2025 23:00:00 +0400</lastBuildDate>
-    <atom:link href="https://emmanuel-io.github.io/fr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://emmanuel-io.com/fr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comment j&#39;ai migré un site WordPress vers un nouveau plan d&#39;hébergement et évité un prix de renouvellement élevé</title>
-      <link>https://emmanuel-io.github.io/fr/posts/wordpress-site-migration-hostinger-renewal-cost/</link>
+      <link>https://emmanuel-io.com/fr/posts/wordpress-site-migration-hostinger-renewal-cost/</link>
       <pubDate>Thu, 01 May 2025 23:00:00 +0400</pubDate>
-      <guid>https://emmanuel-io.github.io/fr/posts/wordpress-site-migration-hostinger-renewal-cost/</guid>
+      <guid>https://emmanuel-io.com/fr/posts/wordpress-site-migration-hostinger-renewal-cost/</guid>
       <description>Découvrez comment migrer un site WordPress entre des plans d&amp;#39;hébergement, éviter des frais de renouvellement élevés et résoudre des problèmes comme les préfixes dans .htaccess causant des erreurs 500.</description>
       <content:encoded><![CDATA[<h2 id="contexte--la-décision-de-migration">Contexte : La décision de migration</h2>
 <p>Face au coût élevé du renouvellement d&rsquo;un plan d&rsquo;hébergement, j&rsquo;ai dû faire un choix : soit payer pour une nouvelle année, soit déplacer le site vers un plan plus abordable. Comme le site est plus un outil de <strong>branding</strong> pour son auteur qu&rsquo;une machine générant des revenus, l&rsquo;option la plus <strong>économique</strong> s&rsquo;est imposée. Après tout, il ne s&rsquo;agissait pas de rentabilité — mais de maintenir le site sans le fardeau des frais de renouvellement élevés.</p>
@@ -102,9 +102,9 @@ Si la migration de WordPress à WordPress a été correcte, la prochaine fois, j
     </item>
     <item>
       <title>Pourquoi j’ai choisi Hugo : performance, simplicité et valeur durable</title>
-      <link>https://emmanuel-io.github.io/fr/posts/why-choose-hugo/</link>
+      <link>https://emmanuel-io.com/fr/posts/why-choose-hugo/</link>
       <pubDate>Fri, 11 Apr 2025 08:00:00 +0400</pubDate>
-      <guid>https://emmanuel-io.github.io/fr/posts/why-choose-hugo/</guid>
+      <guid>https://emmanuel-io.com/fr/posts/why-choose-hugo/</guid>
       <description>Découvrez pourquoi Hugo est le générateur de site statique idéal pour les développeurs qui recherchent vitesse, contrôle et faible maintenance. Une réflexion personnelle d’un ingénieur logiciel.</description>
       <content:encoded><![CDATA[<p>En tant que développeur backend soucieux d’optimisation et de valeur à long terme, je cherche des outils rapides, sobres et fiables. Pour créer mon blog et portfolio, je voulais une solution qui colle à ma manière de penser et de travailler : conviviale pour les développeurs, simple à maintenir, et pérenne.</p>
 <p>Après avoir comparé les options, j’ai choisi <a href="https://gohugo.io/">Hugo</a> — un générateur de site statique open-source — et je ne le regrette pas.</p>
@@ -166,9 +166,9 @@ Si la migration de WordPress à WordPress a été correcte, la prochaine fois, j
     </item>
     <item>
       <title>Configurer Hugo localement avec Git et un thème</title>
-      <link>https://emmanuel-io.github.io/fr/posts/set-hugo-1/</link>
+      <link>https://emmanuel-io.com/fr/posts/set-hugo-1/</link>
       <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
-      <guid>https://emmanuel-io.github.io/fr/posts/set-hugo-1/</guid>
+      <guid>https://emmanuel-io.com/fr/posts/set-hugo-1/</guid>
       <description>Apprenez à configurer un blog Hugo depuis zéro en utilisant Git, les sous-modules et un thème de démarrage.</description>
       <content:encoded><![CDATA[<p>J&rsquo;avais besoin d&rsquo;un espace pour présenter mon travail, partager des idées et écrire des articles — qu&rsquo;il s&rsquo;agisse de tutoriels, de critiques, d&rsquo;éditoriaux ou de simples billets de blog. GitHub est idéal pour héberger du code, mais je voulais un espace à moi sur le web. Ce blog me sert aussi de portfolio numérique.</p>
 <h2 id="quelles-options-pour-bloguer-">Quelles options pour bloguer ?</h2>
@@ -239,9 +239,9 @@ Si la migration de WordPress à WordPress a été correcte, la prochaine fois, j
     </item>
     <item>
       <title>Déployer un site Hugo sur GitHub Pages avec CI/CD</title>
-      <link>https://emmanuel-io.github.io/fr/posts/set-hugo-2/</link>
+      <link>https://emmanuel-io.com/fr/posts/set-hugo-2/</link>
       <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
-      <guid>https://emmanuel-io.github.io/fr/posts/set-hugo-2/</guid>
+      <guid>https://emmanuel-io.com/fr/posts/set-hugo-2/</guid>
       <description>Configurez GitHub Actions pour automatiser la génération de votre blog Hugo et son déploiement avec une clé SSH et une double stratégie de dépôts.</description>
       <content:encoded><![CDATA[<p>Dans la partie 1, nous avons exploré comment j&rsquo;ai créé un site Web en utilisant Hugo, maintenant nous allons créer une action github pour déployer automatiquement le site sur les pages github lorsque nous créons un commit.</p>
 <h3 id="set-up-of-git-repositories"><strong>Set up of Git repositories</strong></h3>
@@ -330,9 +330,9 @@ To understand what I did, you can check these links from the <a href="https://gi
     </item>
     <item>
       <title>CV</title>
-      <link>https://emmanuel-io.github.io/fr/cv/</link>
+      <link>https://emmanuel-io.com/fr/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emmanuel-io.github.io/fr/cv/</guid>
+      <guid>https://emmanuel-io.com/fr/cv/</guid>
       <description>Version en ligne de mon CV — expériences, compétences, parcours.</description>
       <content:encoded><![CDATA[<p>📄 <a href="/emmanuel-amadio-cv.pdf">Télécharger la version PDF (en anglais)</a></p>
 <h1 id="-emmanuel-amadio-emmanuel-io">👋 Emmanuel Amadio (emmanuel io)</h1>
@@ -384,9 +384,9 @@ Développement d’APIs publiques, de services backend et d’outils d’adminis
     </item>
     <item>
       <title>Dans la tête d’emmanuel io</title>
-      <link>https://emmanuel-io.github.io/fr/about/</link>
+      <link>https://emmanuel-io.com/fr/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emmanuel-io.github.io/fr/about/</guid>
+      <guid>https://emmanuel-io.com/fr/about/</guid>
       <description>Développeur de solutions numériques | 25&#43; ans d’expérience | Axé sur la performance, la clarté et la valeur durable</description>
       <content:encoded><![CDATA[
 

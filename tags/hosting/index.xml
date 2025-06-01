@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hosting on emmanuel io</title>
-    <link>https://emmanuel-io.github.io/tags/hosting/</link>
+    <link>https://emmanuel-io.com/tags/hosting/</link>
     <description>Recent content in Hosting on emmanuel io</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 01 May 2025 23:00:00 +0400</lastBuildDate>
-    <atom:link href="https://emmanuel-io.github.io/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://emmanuel-io.com/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I migrated a WordPress Site to a new hosting plan and avoided a huge renewal price</title>
-      <link>https://emmanuel-io.github.io/posts/wordpress-site-migration-hostinger-renewal-cost/</link>
+      <link>https://emmanuel-io.com/posts/wordpress-site-migration-hostinger-renewal-cost/</link>
       <pubDate>Thu, 01 May 2025 23:00:00 +0400</pubDate>
-      <guid>https://emmanuel-io.github.io/posts/wordpress-site-migration-hostinger-renewal-cost/</guid>
+      <guid>https://emmanuel-io.com/posts/wordpress-site-migration-hostinger-renewal-cost/</guid>
       <description>Learn how to migrate a WordPress site between hosting plans, avoid high renewal fees, and troubleshoot issues like .htaccess prepends causing 500 errors.</description>
       <content:encoded><![CDATA[<h2 id="context-the-migration-decision">Context: The migration decision</h2>
 <p>When faced with the high renewal cost of a hosting plan, I had to make a choice: either pay up for another year or move the site to a more affordable plan. Since the site is more of a branding tool for its writer than a revenue-generating machine, the budget-friendly option was the clear winner. After all, this wasn’t about profitability — it was about maintaining the site without the burden of high renewal costs.</p>

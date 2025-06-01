@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tutoriel on emmanuel io</title>
-    <link>https://emmanuel-io.github.io/fr/tags/tutoriel/</link>
+    <link>https://emmanuel-io.com/fr/tags/tutoriel/</link>
     <description>Recent content in Tutoriel on emmanuel io</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sat, 04 Jun 2022 01:12:42 +0200</lastBuildDate>
-    <atom:link href="https://emmanuel-io.github.io/fr/tags/tutoriel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://emmanuel-io.com/fr/tags/tutoriel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configurer Hugo localement avec Git et un thème</title>
-      <link>https://emmanuel-io.github.io/fr/posts/set-hugo-1/</link>
+      <link>https://emmanuel-io.com/fr/posts/set-hugo-1/</link>
       <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
-      <guid>https://emmanuel-io.github.io/fr/posts/set-hugo-1/</guid>
+      <guid>https://emmanuel-io.com/fr/posts/set-hugo-1/</guid>
       <description>Apprenez à configurer un blog Hugo depuis zéro en utilisant Git, les sous-modules et un thème de démarrage.</description>
       <content:encoded><![CDATA[<p>J&rsquo;avais besoin d&rsquo;un espace pour présenter mon travail, partager des idées et écrire des articles — qu&rsquo;il s&rsquo;agisse de tutoriels, de critiques, d&rsquo;éditoriaux ou de simples billets de blog. GitHub est idéal pour héberger du code, mais je voulais un espace à moi sur le web. Ce blog me sert aussi de portfolio numérique.</p>
 <h2 id="quelles-options-pour-bloguer-">Quelles options pour bloguer ?</h2>
@@ -83,9 +83,9 @@
     </item>
     <item>
       <title>Déployer un site Hugo sur GitHub Pages avec CI/CD</title>
-      <link>https://emmanuel-io.github.io/fr/posts/set-hugo-2/</link>
+      <link>https://emmanuel-io.com/fr/posts/set-hugo-2/</link>
       <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
-      <guid>https://emmanuel-io.github.io/fr/posts/set-hugo-2/</guid>
+      <guid>https://emmanuel-io.com/fr/posts/set-hugo-2/</guid>
       <description>Configurez GitHub Actions pour automatiser la génération de votre blog Hugo et son déploiement avec une clé SSH et une double stratégie de dépôts.</description>
       <content:encoded><![CDATA[<p>Dans la partie 1, nous avons exploré comment j&rsquo;ai créé un site Web en utilisant Hugo, maintenant nous allons créer une action github pour déployer automatiquement le site sur les pages github lorsque nous créons un commit.</p>
 <h3 id="set-up-of-git-repositories"><strong>Set up of Git repositories</strong></h3>

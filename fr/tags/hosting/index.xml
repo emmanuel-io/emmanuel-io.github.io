@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hosting on emmanuel io</title>
-    <link>https://emmanuel-io.github.io/fr/tags/hosting/</link>
+    <link>https://emmanuel-io.com/fr/tags/hosting/</link>
     <description>Recent content in Hosting on emmanuel io</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>fr-FR</language>
     <lastBuildDate>Thu, 01 May 2025 23:00:00 +0400</lastBuildDate>
-    <atom:link href="https://emmanuel-io.github.io/fr/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://emmanuel-io.com/fr/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comment j&#39;ai migré un site WordPress vers un nouveau plan d&#39;hébergement et évité un prix de renouvellement élevé</title>
-      <link>https://emmanuel-io.github.io/fr/posts/wordpress-site-migration-hostinger-renewal-cost/</link>
+      <link>https://emmanuel-io.com/fr/posts/wordpress-site-migration-hostinger-renewal-cost/</link>
       <pubDate>Thu, 01 May 2025 23:00:00 +0400</pubDate>
-      <guid>https://emmanuel-io.github.io/fr/posts/wordpress-site-migration-hostinger-renewal-cost/</guid>
+      <guid>https://emmanuel-io.com/fr/posts/wordpress-site-migration-hostinger-renewal-cost/</guid>
       <description>Découvrez comment migrer un site WordPress entre des plans d&amp;#39;hébergement, éviter des frais de renouvellement élevés et résoudre des problèmes comme les préfixes dans .htaccess causant des erreurs 500.</description>
       <content:encoded><![CDATA[<h2 id="contexte--la-décision-de-migration">Contexte : La décision de migration</h2>
 <p>Face au coût élevé du renouvellement d&rsquo;un plan d&rsquo;hébergement, j&rsquo;ai dû faire un choix : soit payer pour une nouvelle année, soit déplacer le site vers un plan plus abordable. Comme le site est plus un outil de <strong>branding</strong> pour son auteur qu&rsquo;une machine générant des revenus, l&rsquo;option la plus <strong>économique</strong> s&rsquo;est imposée. Après tout, il ne s&rsquo;agissait pas de rentabilité — mais de maintenir le site sans le fardeau des frais de renouvellement élevés.</p>

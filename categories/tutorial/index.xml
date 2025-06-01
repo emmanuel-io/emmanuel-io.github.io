@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tutorial on emmanuel io</title>
-    <link>https://emmanuel-io.github.io/categories/tutorial/</link>
+    <link>https://emmanuel-io.com/categories/tutorial/</link>
     <description>Recent content in Tutorial on emmanuel io</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 04 Jun 2022 01:12:42 +0200</lastBuildDate>
-    <atom:link href="https://emmanuel-io.github.io/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://emmanuel-io.com/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploying Hugo to GitHub Pages with CI/CD</title>
-      <link>https://emmanuel-io.github.io/posts/set-hugo-2/</link>
+      <link>https://emmanuel-io.com/posts/set-hugo-2/</link>
       <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
-      <guid>https://emmanuel-io.github.io/posts/set-hugo-2/</guid>
+      <guid>https://emmanuel-io.com/posts/set-hugo-2/</guid>
       <description>Set up GitHub Actions and deploy your Hugo blog using SSH deploy keys and a dual-repo strategy.</description>
       <content:encoded><![CDATA[<p>In part 1 we explored how I created a website using Hugo, now we are going to create a github action to automatically deploy the site on github pages when we create a commit.</p>
 <h3 id="set-up-of-git-repositories"><strong>Set up of Git repositories</strong></h3>
@@ -101,9 +101,9 @@ To understand what I did, you can check these links from the <a href="https://gi
     </item>
     <item>
       <title>Setting up Hugo locally with Git and a theme</title>
-      <link>https://emmanuel-io.github.io/posts/set-hugo-1/</link>
+      <link>https://emmanuel-io.com/posts/set-hugo-1/</link>
       <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
-      <guid>https://emmanuel-io.github.io/posts/set-hugo-1/</guid>
+      <guid>https://emmanuel-io.com/posts/set-hugo-1/</guid>
       <description>Learn how to set up a Hugo blog from scratch using Git, submodules, and a starter theme.</description>
       <content:encoded><![CDATA[<p>I needed a space to showcase my work, share ideas, and write articles — whether tutorials, reviews, editorials, or blog posts. GitHub is great for hosting code, but I wanted a space of my own online. This blog also serves as my digital portfolio.</p>
 <h2 id="what-were-the-options-for-blogging">What were the options for blogging?</h2>

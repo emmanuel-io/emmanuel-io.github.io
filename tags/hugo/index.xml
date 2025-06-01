@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hugo on emmanuel io</title>
-    <link>https://emmanuel-io.github.io/tags/hugo/</link>
+    <link>https://emmanuel-io.com/tags/hugo/</link>
     <description>Recent content in Hugo on emmanuel io</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 11 Apr 2025 08:00:00 +0400</lastBuildDate>
-    <atom:link href="https://emmanuel-io.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://emmanuel-io.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why I Chose Hugo: Performance, Simplicity, and Long-Term Value</title>
-      <link>https://emmanuel-io.github.io/posts/why-choose-hugo/</link>
+      <link>https://emmanuel-io.com/posts/why-choose-hugo/</link>
       <pubDate>Fri, 11 Apr 2025 08:00:00 +0400</pubDate>
-      <guid>https://emmanuel-io.github.io/posts/why-choose-hugo/</guid>
+      <guid>https://emmanuel-io.com/posts/why-choose-hugo/</guid>
       <description>Discover why Hugo is the static site generator of choice for developers who value speed, control, and low maintenance. A personal reflection from a software engineer.</description>
       <content:encoded><![CDATA[<p>As a backend developer focused on optimization and long-term value, I want tools that are fast, lean, and reliable. When building my personal blog and portfolio site, I needed a solution that matched the way I think and work — one that’s developer-friendly, low-maintenance, and future-proof.</p>
 <p>After evaluating the landscape, I chose <a href="https://gohugo.io/">Hugo</a> — an open-source static site generator — and haven’t looked back.</p>
@@ -73,9 +73,9 @@
     </item>
     <item>
       <title>Deploying Hugo to GitHub Pages with CI/CD</title>
-      <link>https://emmanuel-io.github.io/posts/set-hugo-2/</link>
+      <link>https://emmanuel-io.com/posts/set-hugo-2/</link>
       <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
-      <guid>https://emmanuel-io.github.io/posts/set-hugo-2/</guid>
+      <guid>https://emmanuel-io.com/posts/set-hugo-2/</guid>
       <description>Set up GitHub Actions and deploy your Hugo blog using SSH deploy keys and a dual-repo strategy.</description>
       <content:encoded><![CDATA[<p>In part 1 we explored how I created a website using Hugo, now we are going to create a github action to automatically deploy the site on github pages when we create a commit.</p>
 <h3 id="set-up-of-git-repositories"><strong>Set up of Git repositories</strong></h3>
@@ -164,9 +164,9 @@ To understand what I did, you can check these links from the <a href="https://gi
     </item>
     <item>
       <title>Setting up Hugo locally with Git and a theme</title>
-      <link>https://emmanuel-io.github.io/posts/set-hugo-1/</link>
+      <link>https://emmanuel-io.com/posts/set-hugo-1/</link>
       <pubDate>Sat, 04 Jun 2022 01:12:42 +0200</pubDate>
-      <guid>https://emmanuel-io.github.io/posts/set-hugo-1/</guid>
+      <guid>https://emmanuel-io.com/posts/set-hugo-1/</guid>
       <description>Learn how to set up a Hugo blog from scratch using Git, submodules, and a starter theme.</description>
       <content:encoded><![CDATA[<p>I needed a space to showcase my work, share ideas, and write articles — whether tutorials, reviews, editorials, or blog posts. GitHub is great for hosting code, but I wanted a space of my own online. This blog also serves as my digital portfolio.</p>
 <h2 id="what-were-the-options-for-blogging">What were the options for blogging?</h2>
