@@ -68,13 +68,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/tags/hosting/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/tags/hosting/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/tags/hosting/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/tags/hosting/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/tags/migration/</loc>
@@ -83,13 +83,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/tags/migration/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/tags/migration/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/tags/migration/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/tags/migration/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/posts/</loc>
@@ -143,13 +143,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/tags/wordpress/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/tags/wordpress/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/tags/wordpress/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/tags/wordpress/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/tags/hugo/</loc>
@@ -218,13 +218,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/tags/static-site-generator/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/tags/static-site-generator/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/tags/static-site-generator/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/tags/static-site-generator/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/posts/set-hugo-1/</loc>
