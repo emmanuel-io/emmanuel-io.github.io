@@ -4,7 +4,7 @@
     <title>Hugo on emmanuel io</title>
     <link>https://emmanuel-io.com/fr/tags/hugo/</link>
     <description>Recent content in Hugo on emmanuel io</description>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo</generator>
     <language>fr-FR</language>
     <lastBuildDate>Fri, 11 Apr 2025 08:00:00 +0400</lastBuildDate>
     <atom:link href="https://emmanuel-io.com/fr/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
@@ -98,7 +98,8 @@
 <p>Mais je voulais quelque chose de gratuit, minimaliste, et entièrement sous mon contrôle.</p>
 <p>GitHub Pages propose <a href="https://pages.github.com/">un hébergement gratuit pour du contenu statique</a> — sans backend, sans base de données — juste du HTML, CSS, JS. Cette contrainte m&rsquo;a amené à explorer les <strong>générateurs de sites statiques</strong>.</p>
 <blockquote>
-<p>🚧 <em>Mes raisons de choisir Hugo, et une réflexion plus approfondie, seront abordées dans un article à part.</em></p></blockquote>
+<p>🚧 <em>Mes raisons de choisir Hugo, et une réflexion plus approfondie, seront abordées dans un article à part.</em></p>
+</blockquote>
 <hr>
 <h2 id="mise-en-place-du-blog">Mise en place du blog</h2>
 <p>J’ai suivi ces 5 étapes (inspirées de <a href="https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/">l’article de Bhanu Chaddha</a>) :</p>

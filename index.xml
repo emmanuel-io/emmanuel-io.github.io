@@ -4,7 +4,7 @@
     <title>emmanuel io</title>
     <link>https://emmanuel-io.com/</link>
     <description>Recent content on emmanuel io</description>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 01 May 2025 23:00:00 +0400</lastBuildDate>
     <atom:link href="https://emmanuel-io.com/index.xml" rel="self" type="application/rss+xml" />
@@ -289,7 +289,8 @@ To understand what I did, you can check these links from the <a href="https://gi
 <p>But I wanted something free, minimal, and fully under my control.</p>
 <p>GitHub Pages offers <a href="https://pages.github.com/">free hosting for static content</a> — no backend, no database — just HTML, CSS, JS. That constraint inspired me to explore <strong>static site generators</strong>.</p>
 <blockquote>
-<p>🚧 <em>My reasons for choosing Hugo, and a deeper look at why I use it, will be covered in a dedicated follow-up post.</em></p></blockquote>
+<p>🚧 <em>My reasons for choosing Hugo, and a deeper look at why I use it, will be covered in a dedicated follow-up post.</em></p>
+</blockquote>
 <hr>
 <h2 id="setting-up-the-blog">Setting up the blog</h2>
 <p>I followed this 5-step process (inspired by <a href="https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/">Bhanu Chaddha&rsquo;s article</a>):</p>
@@ -427,12 +428,12 @@ Developed and extended public APIs, created backend services, and delivered admi
   <figure>
     <picture>
       <source type="image/webp"
-              srcset="/about/Atari-1040STf_hu_7f975b85dcda6e3.webp 512w" media="(max-width: 768px)">
+              srcset="/about/Atari-1040STf_hu_542f0de0bb4a93e0.webp 512w" media="(max-width: 768px)">
       <source type="image/webp"
-              srcset="/about/Atari-1040STf_hu_fdffe44c956a7b9c.webp 1024w">
+              srcset="/about/Atari-1040STf_hu_2cb3630a006eb39e.webp 1024w">
       <source type="image/jpeg/jpeg"
-              srcset="/about/Atari-1040STf_hu_9eafd81c316e4686.jpg 512w, /about/Atari-1040STf_hu_8d88a6b18bc369b4.jpg 1024w">
-      <img src="/about/Atari-1040STf_hu_8d88a6b18bc369b4.jpg"
+              srcset="/about/Atari-1040STf_hu_e435e7ffb5b96d6a.jpg 512w, /about/Atari-1040STf_hu_40b7a0c104f00c56.jpg 1024w">
+      <img src="/about/Atari-1040STf_hu_40b7a0c104f00c56.jpg"
            alt="It started with this, long ago"
            width="1024"
            height="696"
@@ -467,7 +468,8 @@ Developed and extended public APIs, created backend services, and delivered admi
 </ul>
 <p>And the one rule that overrides all others:</p>
 <blockquote>
-<p>🎯 <strong>Knowledge is multiplied when shared.</strong> Never keep it to yourself.</p></blockquote>
+<p>🎯 <strong>Knowledge is multiplied when shared.</strong> Never keep it to yourself.</p>
+</blockquote>
 ]]></content:encoded>
     </item>
   </channel>

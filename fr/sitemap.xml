@@ -38,13 +38,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/posts/wordpress-site-migration-hostinger-renewal-cost/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/posts/wordpress-site-migration-hostinger-renewal-cost/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/posts/wordpress-site-migration-hostinger-renewal-cost/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/posts/wordpress-site-migration-hostinger-renewal-cost/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/</loc>
@@ -98,13 +98,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/posts/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/posts/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/posts/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/posts/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/categories/reflections/</loc>
@@ -203,13 +203,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/posts/why-choose-hugo/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/posts/why-choose-hugo/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/posts/why-choose-hugo/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/posts/why-choose-hugo/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/tags/static-site-generator/</loc>
@@ -218,13 +218,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/tags/static-site-generator/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/tags/static-site-generator/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/tags/static-site-generator/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/tags/static-site-generator/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/posts/set-hugo-1/</loc>
@@ -233,13 +233,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/posts/set-hugo-1/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/posts/set-hugo-1/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/posts/set-hugo-1/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/posts/set-hugo-1/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/posts/set-hugo-2/</loc>
@@ -286,13 +286,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/cv/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/cv/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/cv/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/cv/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/about/</loc>
@@ -300,13 +300,13 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://emmanuel-io.com/about/"
+                hreflang="fr-FR"
+                href="https://emmanuel-io.com/fr/about/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-FR"
-                href="https://emmanuel-io.com/fr/about/"
+                hreflang="en-US"
+                href="https://emmanuel-io.com/about/"
                 />
   </url><url>
     <loc>https://emmanuel-io.com/fr/search/</loc>
